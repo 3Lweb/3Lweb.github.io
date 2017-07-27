@@ -1331,6 +1331,12 @@ ERROR Deployer not found: git
     </entry>
     
     <entry>
+      <title><![CDATA[读书]]></title>
+      <url>/reading/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[网站书签]]></title>
       <url>/marks/index.html</url>
       <content type="html"><![CDATA[<h2 id="常用网站登录"><a href="#常用网站登录" class="headerlink" title="常用网站登录"></a>常用网站登录</h2><hr>
@@ -1385,12 +1391,6 @@ ERROR Deployer not found: git
 <p><a href="http://www.uisdc.com/ai-create-switch-button" title="AI精品教程！手把手教你绘制一个高科技电源按钮" target="_blank" rel="external">AI精品教程！手把手教你绘制一个高科技电源按钮</a></p>
 <p><a href="http://www.ui.cn/detail/203301.html" title="用PS和AI制作出小黄人的设计教程" target="_blank" rel="external">用PS和AI制作出小黄人的设计教程</a></p>
 ]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[读书]]></title>
-      <url>/reading/index.html</url>
-      <content type="html"></content>
     </entry>
     
     <entry>
