@@ -1,0 +1,1404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title><![CDATA[w3cschool 编程挑战]]></title>
+      <url>/2017/07/11/w3cschool-%E7%BC%96%E7%A8%8B%E6%8C%91%E6%88%98/</url>
+      <content type="html"><![CDATA[<p>刚发现的一个新的网址，里面的编程挑战还是挺好的，</p>
+<p><a href="https://www.w3cschool.cn/codecamp/" target="_blank" rel="external">https://www.w3cschool.cn/codecamp/</a></p>
+<p>还有一个博客号，页面做的挺好<br><a href="http://www.cduyzh.com/JS-initial-train/" target="_blank" rel="external">http://www.cduyzh.com/JS-initial-train/</a></p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[shellinabox连接telenet时候点击输入框页面滚动至顶端]]></title>
+      <url>/2017/07/11/shellinabox%E8%BF%9E%E6%8E%A5telenet%E6%97%B6%E5%80%99%E7%82%B9%E5%87%BB%E8%BE%93%E5%85%A5%E6%A1%86%E9%A1%B5%E9%9D%A2%E6%BB%9A%E5%8A%A8%E8%87%B3%E9%A1%B6%E7%AB%AF/</url>
+      <content type="html"><![CDATA[<p>使用shellinabox插件，在web页面中嵌入telenet模式的命令行时出现问题：当页面上滚动条存在并且不再最顶端时，点击输入框页面会回滚到最顶端。</p>
+<p>这个bug在github上面已经找到问题原因及方法。</p>
+<p><a href="https://github.com/shellinabox/shellinabox/issues/402" target="_blank" rel="external">https://github.com/shellinabox/shellinabox/issues/402</a></p>
+<p>clicking inside iframe makes the page jump to the top</p>
+<p>问题的根源出在谷歌浏览器，但是这个bug浏览器一直没有修复。<br>目前看有两种解决方法，我只列出一种较为简单的解决方法：<br>修改插件的style.css文件<br>把#vt100 .hidden 这个样式改成以下样子就能修复这个问题</p>
+<p>#vt100 .hidden {<br>bottom: 0;<br>left: 0;<br>width: 0;<br>height: 0;<br>position: fixed;<br>z-index: -1;<br>overflow: hidden;<br>}</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[angular select的使用]]></title>
+      <url>/2017/07/11/angular-select%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+      <content type="html"><![CDATA[<p><a href="https://segmentfault.com/a/1190000005342175" target="_blank" rel="external">https://segmentfault.com/a/1190000005342175</a><br>这里面详细介绍了select的使用方法</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[对输入字符进行转义]]></title>
+      <url>/2017/07/03/%E5%AF%B9%E8%BE%93%E5%85%A5%E5%AD%97%E7%AC%A6%E8%BF%9B%E8%A1%8C%E8%BD%AC%E4%B9%89/</url>
+      <content type="html"><![CDATA[<p>对于用户输入的内容要进行预处理，即使没有明确的要求，也要考虑到特殊符号的问题<br>v = s.replace(/&amp;/g,”&amp;”).replace(//g,”&gt;”).replace(/“/g,”&#34;”).replace(/‘/g,”&#39;”);</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[nodejs提示需要安装一些windows扩展程序]]></title>
+      <url>/2017/06/12/nodejs%E6%8F%90%E7%A4%BA%E9%9C%80%E8%A6%81%E5%AE%89%E8%A3%85%E4%B8%80%E4%BA%9Bwindows%E6%89%A9%E5%B1%95%E7%A8%8B%E5%BA%8F/</url>
+      <content type="html"><![CDATA[<p>E:\monitor\node_modules._ws@0.4.32@ws&gt;node “C:\Users\Administrator\AppData\Roaming\npm\node_modules\cnpm\node_modules\npminstall\node-gyp-bin\node-gyp.js” rebuild<br>在此解决方案中一次生成一个项目。若要启用并行生成，请添加“/m”开关。<br>MSBUILD : error MSB3428: 未能加载 Visual C++ 组件“VCBuild.exe”。要解决此问题，1) 安装 .NET Framework 2.0 SDK；2) 安装 Microsoft Visual Studio 2005；或 3) 如果将该组件安装到了<br>其他位置，请将其位置添加到系统路径中。 [E:\monitor\n<br>ode_modules._ws@0.4.32@ws\build\binding.sln]<br>MSBUILD : error MSB3428: 未能加载 Visual C++ 组件“VCBuild.exe”。要解决此问题，1) 安装 .NET Framework 2.0 SDK；2) 安装 Microsoft Visual Studio 2005；或 3) 如果将该组件安装到了<br>其他位置，请将其位置添加到系统路径中。 [E:\monitor\n<br>ode_modules._ws@0.4.32@ws\build\binding.sln]<br>√ Run 1 scripts<br>√ All packages installed (29 packages installed from npm registry, used 7s, speed 5.51kB/s, json 30(38.86kB), tarball 0B)</p>
+<p>当nodejs中出现这些问题的时候，基本都是因为系统中没有安装windows编译器，</p>
+<p>参考网址：</p>
+<p><a href="https://github.com/nodejs/node-gyp/issues/307#issuecomment-240556824" target="_blank" rel="external">https://github.com/nodejs/node-gyp/issues/307#issuecomment-240556824</a></p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[nodejs 如何实现对请求的同步处理]]></title>
+      <url>/2017/06/01/nodejs-%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%AF%B9%E8%AF%B7%E6%B1%82%E7%9A%84%E5%90%8C%E6%AD%A5%E5%A4%84%E7%90%86/</url>
+      <content type="html"><![CDATA[<p>项目中前端同时发了两个异步请求，然后经过nodejs后台处理后两个请求返回的数据错位了。<br>解决方法其实就是使用回调函数</p>
+<p>一般前端同时处理两个请求的问题使用的方法是jquery的when函数，promise函数，async函数。<br>这些函数都是处理同步和异步问题的。</p>
+<p>nodejs http模块如何是实现对请求的同步处理<br><a href="http://blog.csdn.net/wanglei20116527/article/details/62892070" target="_blank" rel="external">http://blog.csdn.net/wanglei20116527/article/details/62892070</a></p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[修改浏览器中的cookie]]></title>
+      <url>/2017/05/24/%E4%BF%AE%E6%94%B9%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E7%9A%84cookie/</url>
+      <content type="html"><![CDATA[<p>网站通过 Cookie 保存了我们访问网站的信息，在不同的浏览器中修改 Cookie 可以如下操作：<br>Firefox:<br>安装 Web Developer 插件，装完重启之后会出现一排新的工具栏，点击 Cookies -&gt; Add Cookie… 即可增加/修改一个Cookie了。<br>另 Edit Cookies 插件也可直接修改COOKIE<br>Opera:<br>Opera 可以在 菜单 -&gt; 工具 -&gt; 高级 -&gt; Cookie… 对话框中找到当前的页面的 Cookie 项，选中以后点“编辑…”即可修改。如果修改不成功的话，有可能是因为启用了 Opera Turbo 加速器导致的，可以检查 菜单 -&gt; 工具 -&gt; 快速参数(F12) -&gt; 启动Opera Turbo 是否开启，如开启着的话，把它关闭以后再试试是不是可以了。<br>Chrome:<br>安装 Edit This Cookie 插件，之后点击插件图标即可操作 Cookie。<br>IE:<br>可以用 IECookiesView 碰碰运气，如果有其他更好的办法也请告知。<br>除上述工具之外，免费工具Fiddler 和商业软件 HttpWatch 可以通过设置断点，跨浏览器调试所有的 HTTP(S)流量，很好很强大。只是需要写脚本，就改 Cookie 这个功能没有上述专门的工具来的方便，有杀鸡用牛刀之嫌。</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[fiddle修改响应数据]]></title>
+      <url>/2017/05/23/fiddle%E4%BF%AE%E6%94%B9%E5%93%8D%E5%BA%94%E6%95%B0%E6%8D%AE/</url>
+      <content type="html"><![CDATA[<p>修改请求内容和请求的响应内容</p>
+<p><a href="http://blog.csdn.net/liuquan0071/article/details/51917893" target="_blank" rel="external">http://blog.csdn.net/liuquan0071/article/details/51917893</a><br>抓包工具：Fiddler 修改请求表单和响应数据</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[表格的响应式显示]]></title>
+      <url>/2017/05/15/%E8%A1%A8%E6%A0%BC%E7%9A%84%E5%93%8D%E5%BA%94%E5%BC%8F%E6%98%BE%E7%A4%BA/</url>
+      <content type="html"><![CDATA[<p><a href="http://www.cnblogs.com/jennieji/p/css-responsive-table.html" target="_blank" rel="external">http://www.cnblogs.com/jennieji/p/css-responsive-table.html</a></p>
+<p>Web Responsive Table, 只需CSS使table在手机和平板中完美显示</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[angular报错:[$compile:ctreq] Controller 'ngModel', required by directive 'bsPager', can't be found!]]></title>
+      <url>/2017/05/15/angular%E6%8A%A5%E9%94%99-compile-ctreq-Controller-ngModel-required-by-directive-bsPager-can-t-be-found/</url>
+      <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/21807929/controller-ngmodel-required-by-directive-cant-be-found" target="_blank" rel="external">http://stackoverflow.com/questions/21807929/controller-ngmodel-required-by-directive-cant-be-found</a></p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[各个浏览器上面的date.prototype.toLocaleString()方法返回数据不同]]></title>
+      <url>/2017/05/13/%E5%90%84%E4%B8%AA%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8A%E9%9D%A2%E7%9A%84date-prototype-toLocaleString-%E6%96%B9%E6%B3%95%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE%E4%B8%8D%E5%90%8C/</url>
+      <content type="html"><![CDATA[<p><a href="http://www.w3help.org/zh-cn/causes/SJ2004" target="_blank" rel="external">http://www.w3help.org/zh-cn/causes/SJ2004</a></p>
+<p>各浏览器中 Date 对象的 toLocaleString 方法的返回值不一致</p>
+<p>解决方法其实就是使用getfullyear等拼装数据格式</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[angualar页面中报错：[ngRepeat:dupes] Duplicates in a repeater are not allowed. Use 'track by' expression to specify unique keys. Repeater: log in aboutLogs, Duplicate key: string:e, Duplicate value: e]]></title>
+      <url>/2017/05/12/angualar%E9%A1%B5%E9%9D%A2%E4%B8%AD%E6%8A%A5%E9%94%99%EF%BC%9A-ngRepeat-dupes-Duplicates-in-a-repeater-are-not-allowed-Use-track-by-expression-to-specify-unique-keys-Repeater-log-in-aboutLogs-Duplicate-key-string-e-Duplicate-value-e/</url>
+      <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/34014708/error-ngrepeatdupes-duplicates-in-a-repeater-are-not-allowed-use-track-by" target="_blank" rel="external">http://stackoverflow.com/questions/34014708/error-ngrepeatdupes-duplicates-in-a-repeater-are-not-allowed-use-track-by</a></p>
+<p>stackoverflow中对于这个问题的答案</p>
+<p><a href="https://docs.angularjs.org/error/ngRepeat/dupes" target="_blank" rel="external">https://docs.angularjs.org/error/ngRepeat/dupes</a></p>
+<p>angualr官网对这个问题的描述</p>
+<p>AngularJS does not allow duplicates in a ng-repeat directive</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[nodejs中的路由机制]]></title>
+      <url>/2017/05/11/nodejs%E4%B8%AD%E7%9A%84%E8%B7%AF%E7%94%B1%E6%9C%BA%E5%88%B6/</url>
+      <content type="html"><![CDATA[<p>前端请求在nodejs中是怎样被处理的，比如express框架，grunt等其实都有应用。</p>
+<p>其实在<a href="https://github.com/typicode/json-server#add-custom-routes" target="_blank" rel="external">json-server</a>的项目里面就能很好的理解，这就是个虚拟数据的专门框架，对于研究express路由很有帮助</p>
+<p><a href="https://github.com/typicode/json-server#add-custom-routes" target="_blank" rel="external">https://github.com/typicode/json-server#add-custom-routes</a></p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[grunt报错：connect.static() is not a function]]></title>
+      <url>/2017/05/09/grunt%E6%8A%A5%E9%94%99%EF%BC%9Aconnect-static-is-not-a-function/</url>
+      <content type="html"><![CDATA[<p>在grunt中突然报错，connect.static()is not a function</p>
+<p>基本上原因可以明确为当connect升级到3.x的时候，static的功能被独立出来，可以使用server-static来进行修改</p>
+<p><a href="https://github.com/gruntjs/grunt-contrib-connect/issues/191" target="_blank" rel="external">https://github.com/gruntjs/grunt-contrib-connect/issues/191</a></p>
+<blockquote>
+<p>connect.static is undefined after update #191</p>
+</blockquote>
+<p><a href="http://stackoverflow.com/questions/24346161/nodejs-connect-cannot-find-static" target="_blank" rel="external">http://stackoverflow.com/questions/24346161/nodejs-connect-cannot-find-static</a></p>
+<blockquote>
+<p>nodejs connect cannot find static</p>
+</blockquote>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[在grunt里面加入其它的服务]]></title>
+      <url>/2017/05/08/%E5%9C%A8grunt%E9%87%8C%E9%9D%A2%E5%8A%A0%E5%85%A5%E5%85%B6%E5%AE%83%E7%9A%84%E6%9C%8D%E5%8A%A1/</url>
+      <content type="html"><![CDATA[<p><a href="http://blog.csdn.net/sarah_limengqing/article/details/51916751" target="_blank" rel="external">http://blog.csdn.net/sarah_limengqing/article/details/51916751</a><br>用grunt搭建自动化的web前端开发环境-完整教程</p>
+<p>在里面插入json-server服务，作为前端开发的模拟接口服务<br><a href="https://github.com/typicode/json-server" target="_blank" rel="external">https://github.com/typicode/json-server</a><br>插入connect服务，用作socket.Io的服务器<br><a href="http://www.cnblogs.com/haogj/p/4785286.html" target="_blank" rel="external">http://www.cnblogs.com/haogj/p/4785286.html</a></p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[angular里面对xhr的处理]]></title>
+      <url>/2017/05/05/angular%E9%87%8C%E9%9D%A2%E5%AF%B9xhr%E7%9A%84%E5%A4%84%E7%90%86/</url>
+      <content type="html"><![CDATA[<p><a href="http://www.tuicool.com/articles/eMZBN3" target="_blank" rel="external">http://www.tuicool.com/articles/eMZBN3</a><br>AngularJS 中利用 Interceptors 来统一处理 HTTP 的错误</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[angular中的路由控制$stateProvider]]></title>
+      <url>/2017/05/05/angular%E4%B8%AD%E7%9A%84%E8%B7%AF%E7%94%B1%E6%8E%A7%E5%88%B6-stateProvider/</url>
+      <content type="html"><![CDATA[<p><a href="http://www.360doc.com/content/15/0517/13/203871_471206681.shtml" target="_blank" rel="external">http://www.360doc.com/content/15/0517/13/203871_471206681.shtml</a><br>ui-router - 路由控制$stateProvider</p>
+<p><a href="http://bubkoo.com/2014/01/02/angular/ui-router/guide/url-routing/" target="_blank" rel="external">http://bubkoo.com/2014/01/02/angular/ui-router/guide/url-routing/</a><br>学习 ui-router - 路由控制</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[关于angular中的异步执行函数]]></title>
+      <url>/2017/05/05/%E5%85%B3%E4%BA%8Eangular%E4%B8%AD%E7%9A%84%E5%BC%82%E6%AD%A5%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</url>
+      <content type="html"><![CDATA[<p>在绿洲项目中的app.js中涉及到了promise的异步概念，需要对其进行一个总结</p>
+<p><a href="http://www.tuicool.com/articles/FfaA7bu" target="_blank" rel="external">http://www.tuicool.com/articles/FfaA7bu</a></p>
+<p>浅谈Angular的 $q, defer, promise</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[ajax配置datatype为json时出错]]></title>
+      <url>/2017/05/04/ajax%E9%85%8D%E7%BD%AEdatatype%E4%B8%BAjson%E6%97%B6%E5%87%BA%E9%94%99/</url>
+      <content type="html"><![CDATA[<p>jquery的ajax配置datatype为json时会出错</p>
+<p><a href="http://blog.csdn.net/hong0220/article/details/47424683" target="_blank" rel="external">http://blog.csdn.net/hong0220/article/details/47424683</a><br>ajax dataType:”json”问题</p>
+<p><a href="http://blog.csdn.net/return__null/article/details/52063340" target="_blank" rel="external">http://blog.csdn.net/return__null/article/details/52063340</a><br>《走过的路 踩过的坑》–jQuery ajax dataType返回出错问题及解决</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[grunt前后端一体化]]></title>
+      <url>/2017/05/03/grunt%E5%89%8D%E5%90%8E%E7%AB%AF%E4%B8%80%E4%BD%93%E5%8C%96/</url>
+      <content type="html"><![CDATA[<p>在前端自动化的时候我们使用grunt进行压缩，同步更新等一系列操作，但是grunt的端口是9000，我们的服务端的端口通常是8080或者是其他，所以页面发送请求的时候就会出现跨域问题。</p>
+<p><a href="http://www.zhoulujun.cn/zhoulujun/html/tools/grunt/2016_0317_7715.html" target="_blank" rel="external">http://www.zhoulujun.cn/zhoulujun/html/tools/grunt/2016_0317_7715.html</a></p>
+<p>grunt前后台一体化调试！解决跨域问题！</p>
+<p><a href="http://www.ngnice.com/posts/76c4bd0f7a4cdc" target="_blank" rel="external">http://www.ngnice.com/posts/76c4bd0f7a4cdc</a><br>如何解决跨域问题（调试期&amp;发布后）</p>
+<p><a href="http://www.cnblogs.com/suiblog/p/4453578.html" target="_blank" rel="external">http://www.cnblogs.com/suiblog/p/4453578.html</a><br>grunt-connect-proxy解决开发时跨域问题</p>
+<p>遇到这个问题是在对项目页面进行调试，使用json-server进行模拟后端数据的处理，然后就是这个跨域问题。</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[创建一个简单的restfulapi]]></title>
+      <url>/2017/05/03/%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84restfulapi/</url>
+      <content type="html"><![CDATA[<p>在前端开发阶段，并没有许多的接口可用，这个时候可以使用假数据，比如json-server</p>
+<pre><code>http://www.jianshu.com/p/0db77f582c12
+创建RESTAPI神器-JsonServer
+
+https://github.com/typicode/json-server
+json-server 的github项目源码
+</code></pre>]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[windows中设置命令别名]]></title>
+      <url>/2017/05/03/windows%E4%B8%AD%E8%AE%BE%E7%BD%AE%E5%91%BD%E4%BB%A4%E5%88%AB%E5%90%8D/</url>
+      <content type="html"><![CDATA[<p><a href="http://www.cnblogs.com/fstang/archive/2013/04/06/3002006.html" target="_blank" rel="external">http://www.cnblogs.com/fstang/archive/2013/04/06/3002006.html</a><br>在cmd中为命令设置别名以及启动cmd时自动执行bat</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[改变input[type=File]的样式]]></title>
+      <url>/2017/05/02/%E6%94%B9%E5%8F%98input-type-File-%E7%9A%84%E6%A0%B7%E5%BC%8F/</url>
+      <content type="html"><![CDATA[<p><a href="http://blog.csdn.net/miner_lee/article/details/8450075" target="_blank" rel="external">http://blog.csdn.net/miner_lee/article/details/8450075</a><br>改变 input file 样式的两种方法</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[html meta的值都有哪些]]></title>
+      <url>/2017/05/02/html-meta%E7%9A%84%E5%80%BC%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B/</url>
+      <content type="html"><![CDATA[<p><a href="http://www.tuicool.com/articles/ra6Fjuj" target="_blank" rel="external">http://www.tuicool.com/articles/ra6Fjuj</a><br>HTML Meta中添加X-UA-Compatible和IE=Edge,chrome=1有什么作用</p>
+<p><a href="http://lrysir.iteye.com/blog/1152071" target="_blank" rel="external">http://lrysir.iteye.com/blog/1152071</a><br>深入HTTP理解</p>
+<p><a href="http://kinglyhum.iteye.com/blog/827807" target="_blank" rel="external">http://kinglyhum.iteye.com/blog/827807</a><br>Meta http-equiv属性详解(转)</p>
+<p><a href="http://blog.csdn.net/u014771464/article/details/52141326" target="_blank" rel="external">http://blog.csdn.net/u014771464/article/details/52141326</a><br>meta http-equiv=… 的功能介绍</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[自动补全url]]></title>
+      <url>/2017/04/28/%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8url/</url>
+      <content type="html"><![CDATA[<p>输入网站地址，自动转到预定的网站首页</p>
+<p>如：输入localhost自动转到<a href="http://localhost/oasis/stable/web/frame/index.html#/global/content/home的地址" target="_blank" rel="external">http://localhost/oasis/stable/web/frame/index.html#/global/content/home的地址</a></p>
+<p>经过查看，应该是在app.js中做了设置：代码第65行：</p>
+<pre><code>$urlRouterProvider.when(&quot;&quot;, URL_HOME);
+</code></pre><p><a href="http://www.360doc.com/content/15/0517/13/203871_471206681.shtml" target="_blank" rel="external">http://www.360doc.com/content/15/0517/13/203871_471206681.shtml</a><br>ui-router - 路由控制$stateProvider</p>
+<p><a href="http://www.tuicool.com/articles/eMZBN3" target="_blank" rel="external">http://www.tuicool.com/articles/eMZBN3</a><br>AngularJS 中利用 Interceptors 来统一处理 HTTP 的错误</p>
+<p>中间可以插入一些预处理的操作</p>
+<p><a href="https://jaredreich.com/" target="_blank" rel="external">https://jaredreich.com/</a><br>一个比较特别的博客</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[快速克隆网站]]></title>
+      <url>/2017/04/25/%E5%BF%AB%E9%80%9F%E5%85%8B%E9%9A%86%E7%BD%91%E7%AB%99/</url>
+      <content type="html"><![CDATA[<p><a href="http://blog.csdn.net/itstt/article/details/17561527" target="_blank" rel="external">http://blog.csdn.net/itstt/article/details/17561527</a><br>几个整站抓取的工具</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[判断客户端是手机还是PC]]></title>
+      <url>/2017/04/25/%E5%88%A4%E6%96%AD%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%98%AF%E6%89%8B%E6%9C%BA%E8%BF%98%E6%98%AFPC/</url>
+      <content type="html"><![CDATA[<p><a href="http://www.cnblogs.com/D-Chen/p/5896994.html" target="_blank" rel="external">http://www.cnblogs.com/D-Chen/p/5896994.html</a><br>JS判断客户端是手机还是PC</p>
+<p>在我手机上测试时可以的</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[自动化代码工具]]></title>
+      <url>/2017/04/22/%E8%87%AA%E5%8A%A8%E5%8C%96%E4%BB%A3%E7%A0%81%E5%B7%A5%E5%85%B7/</url>
+      <content type="html"><![CDATA[<p><a href="https://yq.aliyun.com/articles/47096" target="_blank" rel="external">https://yq.aliyun.com/articles/47096</a><br>在Windows环境下用Yeoman构建AngularJS项目<br>grunt运行报错<br><a href="http://www.cnblogs.com/ayseeing/p/4419447.html" target="_blank" rel="external">http://www.cnblogs.com/ayseeing/p/4419447.html</a><br>Yeoman自动构建js项目<br><a href="http://blog.fens.me/nodejs-yeoman-intro/" target="_blank" rel="external">http://blog.fens.me/nodejs-yeoman-intro/</a></p>
+<p><a href="http://a904143034.iteye.com/blog/2092952" target="_blank" rel="external">http://a904143034.iteye.com/blog/2092952</a></p>
+<p>Yeoman（Yo、Grunt、Bower）——前端工程化-新手之路1<br><a href="https://segmentfault.com/a/1190000002525359" target="_blank" rel="external">https://segmentfault.com/a/1190000002525359</a><br>grunt让Nodejs规范起来<br><a href="http://www.cnblogs.com/justTheOne-bin/p/3558291.html?utm_source=tuicool" target="_blank" rel="external">http://www.cnblogs.com/justTheOne-bin/p/3558291.html?utm_source=tuicool</a><br>bower解决js的依赖管理<br><a href="http://blog.fens.me/nodejs-bower-intro/" target="_blank" rel="external">http://blog.fens.me/nodejs-bower-intro/</a></p>
+<p><a href="https://segmentfault.com/a/1190000002525359" target="_blank" rel="external">https://segmentfault.com/a/1190000002525359</a></p>
+<p>Yeoman官方教程：用Yeoman和AngularJS做Web应用<br><a href="http://blog.jobbole.com/65399/" target="_blank" rel="external">http://blog.jobbole.com/65399/</a></p>
+<p><a href="http://www.cnblogs.com/icestone10/p/3250647.html" target="_blank" rel="external">http://www.cnblogs.com/icestone10/p/3250647.html</a></p>
+<p><a href="http://yeoman.io/learning/index.html" target="_blank" rel="external">http://yeoman.io/learning/index.html</a><br><a href="http://www.cnblogs.com/Leo_wl/p/4780678.html" target="_blank" rel="external">http://www.cnblogs.com/Leo_wl/p/4780678.html</a><br>DSL BDD TDD　Behavior Driven Development，行为驱动开发</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[智能工作流]]></title>
+      <url>/2017/04/22/%E6%99%BA%E8%83%BD%E5%B7%A5%E4%BD%9C%E6%B5%81/</url>
+      <content type="html"><![CDATA[<ol>
+<li>关于智能工作流的知识<br>包含了brower，Grunt, Gulp，yeoman等部分知识</li>
+</ol>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[怎么去做一个双语网站]]></title>
+      <url>/2017/04/22/%E6%80%8E%E4%B9%88%E5%8E%BB%E5%81%9A%E4%B8%80%E4%B8%AA%E5%8F%8C%E8%AF%AD%E7%BD%91%E7%AB%99/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[在web端使用telenet方式连接设备]]></title>
+      <url>/2017/04/22/%E5%9C%A8web%E7%AB%AF%E4%BD%BF%E7%94%A8telenet%E6%96%B9%E5%BC%8F%E8%BF%9E%E6%8E%A5%E8%AE%BE%E5%A4%87/</url>
+      <content type="html"><![CDATA[<p><a href="http://hezhang.blog.51cto.com/1347601/1361333" target="_blank" rel="external">http://hezhang.blog.51cto.com/1347601/1361333</a><br>shellinabox基于web浏览器的终端模拟器<br><a href="https://github.com/shellinabox/shellinabox" target="_blank" rel="external">https://github.com/shellinabox/shellinabox</a><br>shellinabox 在github上的源码</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[在nodejs使用https协议]]></title>
+      <url>/2017/04/22/%E5%9C%A8nodejs%E4%BD%BF%E7%94%A8https%E5%8D%8F%E8%AE%AE/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[原生js是如何在浏览器中实现的]]></title>
+      <url>/2017/04/22/%E5%8E%9F%E7%94%9Fjs%E6%98%AF%E5%A6%82%E4%BD%95%E5%9C%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E5%AE%9E%E7%8E%B0%E7%9A%84/</url>
+      <content type="html"><![CDATA[<p>原生js的方法实现：<br>    我们说ecma262其实是js规范，各个浏览器根据这个规范用自己的引擎，比如谷歌就是用v8来实现原生js的各项功能，而v8则是使用c++来实现的。</p>
+<pre><code>https://github.com/v8/v8
+谷歌的js引擎v8的开源代码
+
+http://www.cnblogs.com/gdutbean/archive/2012/02/21/2362003.html
+JS 各种引擎介绍
+
+我们写代码的时候通常使用的是ECMA262作为原生js的api文档，至于怎么使用js效率更高，则最好查看各个js框架里面的实现方法
+</code></pre>]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[渲染html文件时需要的文档头如res.header等]]></title>
+      <url>/2017/04/22/%E6%B8%B2%E6%9F%93html%E6%96%87%E4%BB%B6%E6%97%B6%E9%9C%80%E8%A6%81%E7%9A%84%E6%96%87%E6%A1%A3%E5%A4%B4%E5%A6%82res-header%E7%AD%89/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[修改jar包]]></title>
+      <url>/2017/04/22/%E4%BF%AE%E6%94%B9jar%E5%8C%85/</url>
+      <content type="html"><![CDATA[<p><a href="http://blog.csdn.net/hexin373/article/details/6669813" target="_blank" rel="external">http://blog.csdn.net/hexin373/article/details/6669813</a><br>修改别人的jar包并且保存</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[为什么程序中需要有保活机制]]></title>
+      <url>/2017/04/22/%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A8%8B%E5%BA%8F%E4%B8%AD%E9%9C%80%E8%A6%81%E6%9C%89%E4%BF%9D%E6%B4%BB%E6%9C%BA%E5%88%B6/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[使用nginx实现反向代理]]></title>
+      <url>/2017/04/22/%E4%BD%BF%E7%94%A8nginx%E5%AE%9E%E7%8E%B0%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</url>
+      <content type="html"><![CDATA[<p><a href="http://tengine.taobao.org/book/chapter_02.html" target="_blank" rel="external">http://tengine.taobao.org/book/chapter_02.html</a><br>nginx平台初探<br><a href="http://www.cnblogs.com/chuncn/archive/2011/10/14/2212291.html" target="_blank" rel="external">http://www.cnblogs.com/chuncn/archive/2011/10/14/2212291.html</a><br>windows下nginx安装、配置与使用</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[使用grunt规范开发nodejs]]></title>
+      <url>/2017/04/22/%E4%BD%BF%E7%94%A8grunt%E8%A7%84%E8%8C%83%E5%BC%80%E5%8F%91nodejs/</url>
+      <content type="html"><![CDATA[<p><a href="http://blog.fens.me/nodejs-grunt-intro/" target="_blank" rel="external">http://blog.fens.me/nodejs-grunt-intro/</a></p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[如何在Android智能手机上捕获数据包？]]></title>
+      <url>/2017/04/22/%E5%A6%82%E4%BD%95%E5%9C%A8Android%E6%99%BA%E8%83%BD%E6%89%8B%E6%9C%BA%E4%B8%8A%E6%8D%95%E8%8E%B7%E6%95%B0%E6%8D%AE%E5%8C%85%EF%BC%9F/</url>
+      <content type="html"><![CDATA[<p><a href="http://blog.csdn.net/howeverpf/article/details/10517351" target="_blank" rel="external">http://blog.csdn.net/howeverpf/article/details/10517351</a><br>如何在Android智能手机上捕获数据包？<br><a href="http://blog.csdn.net/howeverpf/article/details/10437671" target="_blank" rel="external">http://blog.csdn.net/howeverpf/article/details/10437671</a><br>百度贴吧客户端(Android)网络通信行为分析</p>
+<p><a href="https://www.zhihu.com/question/20467503" target="_blank" rel="external">https://www.zhihu.com/question/20467503</a><br>知乎搜索</p>
+<p><a href="http://www.trinea.cn/android/tcpdump_wireshark/" target="_blank" rel="external">http://www.trinea.cn/android/tcpdump_wireshark/</a><br>Android利用tcpdump和wireshark抓取网络数据包</p>
+<p><a href="http://xlover.iteye.com/blog/1358301" target="_blank" rel="external">http://xlover.iteye.com/blog/1358301</a><br>android如何开发流量监控软件</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[如何用 CSS 实现多行文本的省略号显示]]></title>
+      <url>/2017/04/22/%E5%A6%82%E4%BD%95%E7%94%A8-CSS-%E5%AE%9E%E7%8E%B0%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E7%9A%84%E7%9C%81%E7%95%A5%E5%8F%B7%E6%98%BE%E7%A4%BA/</url>
+      <content type="html"><![CDATA[<p>单行文本的省略号显示使用：<br>overflow:hidden;<br>word-wrap:nowarp;<br>text-overflow:ellipsis;</p>
+<p>针对多行文本：</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[如何调用angular中使用的参数]]></title>
+      <url>/2017/04/22/%E5%A6%82%E4%BD%95%E8%B0%83%E7%94%A8angular%E4%B8%AD%E4%BD%BF%E7%94%A8%E7%9A%84%E5%8F%82%E6%95%B0/</url>
+      <content type="html"><![CDATA[<p>当看到别人写的angular指令的时候，发现没有说明文档，这样的话我们怎么去调用这个指令中的各条命令呢</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[强大的webstrom]]></title>
+      <url>/2017/04/22/%E5%BC%BA%E5%A4%A7%E7%9A%84webstrom/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[前端自动化测试]]></title>
+      <url>/2017/04/22/%E5%89%8D%E7%AB%AF%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[判断两个json对象是否相等]]></title>
+      <url>/2017/04/22/%E5%88%A4%E6%96%AD%E4%B8%A4%E4%B8%AAjson%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%90%A6%E7%9B%B8%E7%AD%89/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[利用代理实现手机抓包]]></title>
+      <url>/2017/04/22/%E5%88%A9%E7%94%A8%E4%BB%A3%E7%90%86%E5%AE%9E%E7%8E%B0%E6%89%8B%E6%9C%BA%E6%8A%93%E5%8C%85/</url>
+      <content type="html"><![CDATA[<p>如何使用Android系统自带的VPN服务框架<br><a href="http://blog.csdn.net/roland_sun/article/details/46337171" target="_blank" rel="external">http://blog.csdn.net/roland_sun/article/details/46337171</a></p>
+<p><a href="http://blog.csdn.net/jsqfengbao/article/details/53412858#comments" target="_blank" rel="external">http://blog.csdn.net/jsqfengbao/article/details/53412858#comments</a><br>Android免root流量防火墙，简单小程序</p>
+<p><a href="http://blog.csdn.net/jsqfengbao/article/details/52462125" target="_blank" rel="external">http://blog.csdn.net/jsqfengbao/article/details/52462125</a><br>使用Android系统自带的VpnService截取流量</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[将mongodb数据库里面的信息整体复制到另一个地方]]></title>
+      <url>/2017/04/22/%E5%B0%86mongodb%E6%95%B0%E6%8D%AE%E5%BA%93%E9%87%8C%E9%9D%A2%E7%9A%84%E4%BF%A1%E6%81%AF%E6%95%B4%E4%BD%93%E5%A4%8D%E5%88%B6%E5%88%B0%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%9C%B0%E6%96%B9/</url>
+      <content type="html"><![CDATA[<p><a href="http://www.cnblogs.com/jiangzhichao/archive/2011/08/12/2135899.html" target="_blank" rel="external">http://www.cnblogs.com/jiangzhichao/archive/2011/08/12/2135899.html</a><br>MongoDB的备份（mongodump）与恢复（mongorestore）</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[关于浏览器的代理设置]]></title>
+      <url>/2017/04/22/%E5%85%B3%E4%BA%8E%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E4%BB%A3%E7%90%86%E8%AE%BE%E7%BD%AE/</url>
+      <content type="html"><![CDATA[<p><a href="http://www.cnblogs.com/hanlingzhi/p/3765828.html" target="_blank" rel="external">http://www.cnblogs.com/hanlingzhi/p/3765828.html</a><br>chrome代理服务器设置</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[关于common.js和require.js]]></title>
+      <url>/2017/04/22/%E5%85%B3%E4%BA%8Ecommon-js%E5%92%8Crequire-js/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[关于angualr中的事件发射器]]></title>
+      <url>/2017/04/22/%E5%85%B3%E4%BA%8Eangualr%E4%B8%AD%E7%9A%84%E4%BA%8B%E4%BB%B6%E5%8F%91%E5%B0%84%E5%99%A8/</url>
+      <content type="html"><![CDATA[<p>使用$scope.$apply()时显示apply事件已经在运行中<br>而改用$scope.$emit.$apply()之后，程序便可以顺利运行。<br>我猜测的是控制器和指令之间存在作用域的问题，跨域时候是不能执行命令的，这个时候可以使用事件发射器函数</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[工作常用的小工具]]></title>
+      <url>/2017/04/22/%E5%B7%A5%E4%BD%9C%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B0%8F%E5%B7%A5%E5%85%B7/</url>
+      <content type="html"><![CDATA[<p>Axure        可以用来制作ui界面，主要是用来设计网页界面，制作原型图，也可以做一些流程图，优点是可以转化为html文件或者是图片，            随时可以修改。<br>Illustrator    用来制作示意图，可以用于科研的示意图动画制作，功能强大齐全<br><a href="http://mp.weixin.qq.com/s?__biz=MzA4OTQ1MTQxNg==&amp;mid=403277201&amp;idx=1&amp;sn=8ce1ee8ffd787c8023318a4b1ca1fc04&amp;scene=21#wechat_redirect" target="_blank" rel="external">http://mp.weixin.qq.com/s?__biz=MzA4OTQ1MTQxNg==&amp;mid=403277201&amp;idx=1&amp;sn=8ce1ee8ffd787c8023318a4b1ca1fc04&amp;scene=21#wechat_redirect</a></p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[对json和数组进行深度拷贝]]></title>
+      <url>/2017/04/22/%E5%AF%B9json%E5%92%8C%E6%95%B0%E7%BB%84%E8%BF%9B%E8%A1%8C%E6%B7%B1%E5%BA%A6%E6%8B%B7%E8%B4%9D/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[端口被占用问题]]></title>
+      <url>/2017/04/22/%E7%AB%AF%E5%8F%A3%E8%A2%AB%E5%8D%A0%E7%94%A8%E9%97%AE%E9%A2%98/</url>
+      <content type="html"><![CDATA[<p>由于443端口被占用，导致的httpd服务器无法正常启动。</p>
+<p>我们在终端输入：</p>
+<p>#service httpd restart<br>显示错误：<br>停止 httpd：                                               [失败]<br>正在启动 httpd：(98)Address already in use: make_sock: could not bind to address [::]:443<br>(98)Address already in use: make_sock: could not bind to address 0.0.0.0:443<br>no listening sockets available, shutting down<br>Unable to open logs<br>                                                           [失败]</p>
+<p>1.我们终端输入命令显示443端口被被那个程序占用</p>
+<p>#netstat -lnp|grep 443</p>
+<p>tcp        0      0 0.0.0.0:443                 0.0.0.0:<em>                   LISTEN      2573/vmware-hostd<br>tcp        0      0 :::443                      :::</em>                        LISTEN      2573/vmware-hostd<br>2.#kill 2573      //杀死2573号进程</p>
+<p>3.#service httpd restart    //重启服务器显示成功，问题暂时解决</p>
+<p>停止 httpd：                                               [确定]<br>正在启动 httpd：                                           [确定]</p>
+<p><strong><strong><strong><em>*</em></strong></strong></strong>上面的命令只能暂时起作用，我们需要为vmware指定端口才能永远解决问题</p>
+<p>2.我们终端输入命令</p>
+<p>#grep 443 /etc/vmware      //匹配443端口所在文件</p>
+<p>2.然后我们修改配置文件端口号</p>
+<p>#gedit /etc/vmware/hostd/proxy.xml &amp;</p>
+<p>  -1<br>  880  //将次选项端口号改成880保存退出，问题解决</p>
+<hr>
+<p>#history  | grep gedit //用来在历史输入命令中查找用过的gedit命令</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[代码库]]></title>
+      <url>/2017/04/22/%E4%BB%A3%E7%A0%81%E5%BA%93/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[程序员的自我修养之编程规范]]></title>
+      <url>/2017/04/22/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%87%AA%E6%88%91%E4%BF%AE%E5%85%BB%E4%B9%8B%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[程序如何判断运行环境]]></title>
+      <url>/2017/04/22/%E7%A8%8B%E5%BA%8F%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%AD%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83/</url>
+      <content type="html"><![CDATA[<p>开发环境，运行环境和本地环境<br>程序如何判断自己所处的环境</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[包管理器yarn]]></title>
+      <url>/2017/04/22/%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8yarn/</url>
+      <content type="html"><![CDATA[<p><a href="http://www.cnblogs.com/liboxncg/p/6006226.html" target="_blank" rel="external">http://www.cnblogs.com/liboxncg/p/6006226.html</a><br>Node.js包管理器Yarn的入门介绍与安装</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[websocket如何实现与设备进行通信]]></title>
+      <url>/2017/04/22/websocket%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%8E%E8%AE%BE%E5%A4%87%E8%BF%9B%E8%A1%8C%E9%80%9A%E4%BF%A1/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[requirejs和seajs的差别]]></title>
+      <url>/2017/04/22/requirejs%E5%92%8Cseajs%E7%9A%84%E5%B7%AE%E5%88%AB/</url>
+      <content type="html"><![CDATA[<p><a href="https://www.zhihu.com/question/20342350/answer/14828786" target="_blank" rel="external">https://www.zhihu.com/question/20342350/answer/14828786</a><br>知乎：玉伯的答案</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[nodejs中时间的获取比如Date.now()]]></title>
+      <url>/2017/04/22/nodejs%E4%B8%AD%E6%97%B6%E9%97%B4%E7%9A%84%E8%8E%B7%E5%8F%96%E6%AF%94%E5%A6%82Date-now/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[nodejs中进行断点调试]]></title>
+      <url>/2017/04/22/nodejs%E4%B8%AD%E8%BF%9B%E8%A1%8C%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95/</url>
+      <content type="html"><![CDATA[<p>debug模块<br>和morgan模块</p>
+<p>Nodejs调试技术总结<br><a href="http://www.cnblogs.com/moonz-wu/archive/2012/01/15/2322120.html" target="_blank" rel="external">http://www.cnblogs.com/moonz-wu/archive/2012/01/15/2322120.html</a></p>
+<p>webstrom自带断点调试功能</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[nodejs中的单元测试]]></title>
+      <url>/2017/04/22/nodejs%E4%B8%AD%E7%9A%84%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</url>
+      <content type="html"><![CDATA[<p><a href="http://blog.chinaunix.net/uid-26983585-id-3918770.html" target="_blank" rel="external">http://blog.chinaunix.net/uid-26983585-id-3918770.html</a><br>nodejs 单元测试之学 </p>
+<p>nodejs使用mocha框架进行单元测试，实例可见绿洲项目的webserver的test文件夹</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[nodejs中的session模块是如何实现的]]></title>
+      <url>/2017/04/22/nodejs%E4%B8%AD%E7%9A%84session%E6%A8%A1%E5%9D%97%E6%98%AF%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%9A%84/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[nodejs使用cas RESTful接口实现单点登录]]></title>
+      <url>/2017/04/22/nodejs%E4%BD%BF%E7%94%A8cas-RESTful%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[nodejs多线程应用]]></title>
+      <url>/2017/04/22/nodejs%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%BA%94%E7%94%A8/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[nodejs的异步调用]]></title>
+      <url>/2017/04/22/nodejs%E7%9A%84%E5%BC%82%E6%AD%A5%E8%B0%83%E7%94%A8/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[node express允许跨域请求]]></title>
+      <url>/2017/04/22/node-express%E5%85%81%E8%AE%B8%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82/</url>
+      <content type="html"><![CDATA[<p><a href="http://blog.csdn.net/dreamer2020/article/details/51608183" target="_blank" rel="external">http://blog.csdn.net/dreamer2020/article/details/51608183</a></p>
+<p><a href="http://blog.csdn.net/jumtre/article/details/49790815" target="_blank" rel="external">http://blog.csdn.net/jumtre/article/details/49790815</a><br>angualr实现请求跨域</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[ngRoute (angular-route.js) 和 ui-router (angular-ui-router.js) 模块有什么不同呢？]]></title>
+      <url>/2017/04/22/ngRoute-angular-route-js-%E5%92%8C-ui-router-angular-ui-router-js-%E6%A8%A1%E5%9D%97%E6%9C%89%E4%BB%80%E4%B9%88%E4%B8%8D%E5%90%8C%E5%91%A2%EF%BC%9F/</url>
+      <content type="html"><![CDATA[<p><a href="http://www.cnblogs.com/mengruying/p/5504625.html" target="_blank" rel="external">http://www.cnblogs.com/mengruying/p/5504625.html</a><br>ngRoute (angular-route.js) 和 ui-router (angular-ui-router.js) 模块有什么不同呢？</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[mongoose实例]]></title>
+      <url>/2017/04/22/mongoose%E5%AE%9E%E4%BE%8B/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[js中自动插入分号]]></title>
+      <url>/2017/04/22/js%E4%B8%AD%E8%87%AA%E5%8A%A8%E6%8F%92%E5%85%A5%E5%88%86%E5%8F%B7/</url>
+      <content type="html"><![CDATA[<p>为什么js中语句不写分号也能正确编译<br>ECMA标准第53页</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[js中异步的实现方法]]></title>
+      <url>/2017/04/22/js%E4%B8%AD%E5%BC%82%E6%AD%A5%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%B3%95/</url>
+      <content type="html"><![CDATA[<p><a href="https://segmentfault.com/a/1190000002788733" target="_blank" rel="external">https://segmentfault.com/a/1190000002788733</a><br>给你一个承诺 - 玩转 AngularJS 的 Promise</p>
+<p><a href="http://www.ruanyifeng.com/blog/2012/12/asynchronous%EF%BC%BFjavascript.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2012/12/asynchronous%EF%BC%BFjavascript.html</a><br>Javascript异步编程的4种方法</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[js精确度的问题]]></title>
+      <url>/2017/04/22/js%E7%B2%BE%E7%A1%AE%E5%BA%A6%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[js函数前加分号和感叹号是什么意思？有什么用？]]></title>
+      <url>/2017/04/22/js%E5%87%BD%E6%95%B0%E5%89%8D%E5%8A%A0%E5%88%86%E5%8F%B7%E5%92%8C%E6%84%9F%E5%8F%B9%E5%8F%B7%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D%EF%BC%9F%E6%9C%89%E4%BB%80%E4%B9%88%E7%94%A8%EF%BC%9F/</url>
+      <content type="html"><![CDATA[<p><a href="http://www.cnblogs.com/mq0036/p/4605255.html" target="_blank" rel="external">http://www.cnblogs.com/mq0036/p/4605255.html</a><br>js函数前加分号和感叹号是什么意思？有什么用？</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[js的面向对象]]></title>
+      <url>/2017/04/22/js%E7%9A%84%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[jquery中的clone函数是怎么复制事件的]]></title>
+      <url>/2017/04/22/jquery%E4%B8%AD%E7%9A%84clone%E5%87%BD%E6%95%B0%E6%98%AF%E6%80%8E%E4%B9%88%E5%A4%8D%E5%88%B6%E4%BA%8B%E4%BB%B6%E7%9A%84/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[jquery的$.each()方法]]></title>
+      <url>/2017/04/22/jquery%E7%9A%84-each-%E6%96%B9%E6%B3%95/</url>
+      <content type="html"><![CDATA[<p><a href="http://www.cnblogs.com/GreenLeaves/p/5640842.html" target="_blank" rel="external">http://www.cnblogs.com/GreenLeaves/p/5640842.html</a><br>Jquery  遍历数组之$().each方法与$.each()方法介绍</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[jqgrid绘制表格插件]]></title>
+      <url>/2017/04/22/jqgrid%E7%BB%98%E5%88%B6%E8%A1%A8%E6%A0%BC%E6%8F%92%E4%BB%B6/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[jenkins自动化构建工具]]></title>
+      <url>/2017/04/22/jenkins%E8%87%AA%E5%8A%A8%E5%8C%96%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/</url>
+      <content type="html"><![CDATA[<p><a href="http://blog.csdn.net/littlechang/article/details/8642149" target="_blank" rel="external">http://blog.csdn.net/littlechang/article/details/8642149</a><br>使用Jenkins配置自动化构建</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[fiddler的使用]]></title>
+      <url>/2017/04/22/fiddler%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[express模块中的路由机制]]></title>
+      <url>/2017/04/22/express%E6%A8%A1%E5%9D%97%E4%B8%AD%E7%9A%84%E8%B7%AF%E7%94%B1%E6%9C%BA%E5%88%B6/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[echarts的使用]]></title>
+      <url>/2017/04/22/echarts%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Doxygen初学与简单应用]]></title>
+      <url>/2017/04/22/Doxygen%E5%88%9D%E5%AD%A6%E4%B8%8E%E7%AE%80%E5%8D%95%E5%BA%94%E7%94%A8/</url>
+      <content type="html"><![CDATA[<p><a href="http://blog.csdn.net/wuhenyouyuyouyu/article/details/50826303" target="_blank" rel="external">http://blog.csdn.net/wuhenyouyuyouyu/article/details/50826303</a><br>Doxygen初学与简单应用</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[daterangepicker]]></title>
+      <url>/2017/04/22/daterangepicker/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[compass与sass]]></title>
+      <url>/2017/04/22/compass%E4%B8%8Esass/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[bootstrap源码]]></title>
+      <url>/2017/04/22/bootstrap%E6%BA%90%E7%A0%81/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[bootstrap-datepicker]]></title>
+      <url>/2017/04/22/bootstrap-datepicker/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[bootstrap table插件api学习]]></title>
+      <url>/2017/04/22/bootstrap-table%E6%8F%92%E4%BB%B6api%E5%AD%A6%E4%B9%A0/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Angular中在前后端分离模式下实现权限控制]]></title>
+      <url>/2017/04/22/Angular%E4%B8%AD%E5%9C%A8%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E6%A8%A1%E5%BC%8F%E4%B8%8B%E5%AE%9E%E7%8E%B0%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/</url>
+      <content type="html"><![CDATA[<p><a href="http://chenpeng.info/html/3287" target="_blank" rel="external">http://chenpeng.info/html/3287</a><br>Angular中在前后端分离模式下实现权限控制 – 基于RBAC</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[angular中使用select2插件]]></title>
+      <url>/2017/04/22/angular%E4%B8%AD%E4%BD%BF%E7%94%A8select2%E6%8F%92%E4%BB%B6/</url>
+      <content type="html"><![CDATA[<p><a href="http://www.cnblogs.com/landeanfen/p/5099332.html" target="_blank" rel="external">http://www.cnblogs.com/landeanfen/p/5099332.html</a><br>Bootstrap Select2组件使用小结</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[angular中的自动化测试]]></title>
+      <url>/2017/04/22/angular%E4%B8%AD%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/</url>
+      <content type="html"><![CDATA[<p><a href="http://www.cnblogs.com/vipyoumay/p/5331787.html" target="_blank" rel="external">http://www.cnblogs.com/vipyoumay/p/5331787.html</a><br>angular单元测试与自动化UI测试实践<br>单元测试及调试测试，单元测试覆盖率</p>
+<p><a href="http://huziketang.com/blog/posts/detail?postId=58d3dcb87413fc2e8240855a" target="_blank" rel="external">http://huziketang.com/blog/posts/detail?postId=58d3dcb87413fc2e8240855a</a><br>测试你的前端代码</p>
+<p><a href="http://sentsin.com/web/658.html" target="_blank" rel="external">http://sentsin.com/web/658.html</a><br>自动化e2e测试 – WebDriverJS，Jasmine和Protractor</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[angular中的双向绑定失效]]></title>
+      <url>/2017/04/22/angular%E4%B8%AD%E7%9A%84%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E5%A4%B1%E6%95%88/</url>
+      <content type="html"><![CDATA[<p><a href="http://div.io/topic/570" target="_blank" rel="external">http://div.io/topic/570</a><br>Angular沉思录（一） 数据的双向绑定</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[angular中单选框和多选框的双向绑定]]></title>
+      <url>/2017/04/22/angular%E4%B8%AD%E5%8D%95%E9%80%89%E6%A1%86%E5%92%8C%E5%A4%9A%E9%80%89%E6%A1%86%E7%9A%84%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A/</url>
+      <content type="html"><![CDATA[<p><a href="http://blog.csdn.net/ligang2585116/article/details/48089285" target="_blank" rel="external">http://blog.csdn.net/ligang2585116/article/details/48089285</a></p>
+<p><a href="http://www.kancloud.cn/digest/angularjs-sunny1989/122848" target="_blank" rel="external">http://www.kancloud.cn/digest/angularjs-sunny1989/122848</a><br>AngularJS与单选框及多选框的双向动态绑定</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[angular中select进行联动]]></title>
+      <url>/2017/04/22/angular%E4%B8%ADselect%E8%BF%9B%E8%A1%8C%E8%81%94%E5%8A%A8/</url>
+      <content type="html"><![CDATA[<p><img src="http://i.imgur.com/EXJT7Au.jpg" alt="两个select进行联动"></p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[angular中ng-show和ng-hide执行后，echarts图表显示出现问题]]></title>
+      <url>/2017/04/22/angular%E4%B8%ADng-show%E5%92%8Cng-hide%E6%89%A7%E8%A1%8C%E5%90%8E%EF%BC%8Cecharts%E5%9B%BE%E8%A1%A8%E6%98%BE%E7%A4%BA%E5%87%BA%E7%8E%B0%E9%97%AE%E9%A2%98/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[angular中$q.defer()与promise方法]]></title>
+      <url>/2017/04/22/angular%E4%B8%AD-q-defer-%E4%B8%8Epromise%E6%96%B9%E6%B3%95/</url>
+      <content type="html"><![CDATA[<p><a href="http://www.tuicool.com/articles/FfaA7bu" target="_blank" rel="external">http://www.tuicool.com/articles/FfaA7bu</a><br>浅谈Angular的 $q, defer, promise</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[angular在页面之间传递数据]]></title>
+      <url>/2017/04/22/angular%E5%9C%A8%E9%A1%B5%E9%9D%A2%E4%B9%8B%E9%97%B4%E4%BC%A0%E9%80%92%E6%95%B0%E6%8D%AE/</url>
+      <content type="html"><![CDATA[<p><a href="https://www.zhihu.com/question/33565135" target="_blank" rel="external">https://www.zhihu.com/question/33565135</a></p>
+<p>以上是知乎上提供的五种方法，但是我看了一下，大概可行的方法有这么几种：</p>
+<ol>
+<li><p>使用$state.go(ui-href也是一样的)方法，使用$statparam方法来接收数据，前提是必须在app.js里面使用$stateProvider设定参数，否则url中携带的数据会被过过滤掉</p>
+</li>
+<li><p>使用rootScope的方法，将数据存储进根作用域里面，不过这样会给整个应用带来负担，毕竟不是所有的页面都需要这些数据</p>
+</li>
+<li><p>使用localstroage将数据存进浏览器中实现跨页面存取数据</p>
+</li>
+</ol>
+<p>4.构建一个服务，专门用来在两个页面之间传递数据</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[angular读书笔记]]></title>
+      <url>/2017/04/22/angular%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</url>
+      <content type="html"><![CDATA[<p>1.Demo：创建一个实例项目<br>目的：是熟悉项目的创建及基本结构<br>内容：构建一个股票查看程序，包含了股票列表和变动图表，涉及到自动化代码工具，代码重用，数据绑定等部分的知识<br>此实例来自《AngularJS 高级编程》，在实际操作中google charts并不能正常的使用，所以我用echarts代替了。</p>
+<ol>
+<li>前端使用Angular架构相关<br>包括大中小型项目的构件内容，可以与实际项目的架构进行类比<br>2.1 控制器、服务和指令<br>大部分angular代码都会被包含在控制器、服务或指令中。从高级别看，三者关系为：服务负责从远端服务器抓取和存储数据；基于服务构建的控制器为angularjs作用于层次提供数据和功能；基于控制器和服务构建的指令将直接与文档对象模型（DOM）元素进行交互<br>3.1.1控制器<br>基本目的：负责为超文本标记语言（HTML）公开Javascript数据和函数的AngularJS组件，控制器可以使用服务做为依赖，但控制器和服务无法把控制器做为依赖。<br>HTML：<br><div ng-controller="MyController"></div><br>Js:<br>var m = angular.module(‘myModule’);<br>m.factory(‘myService’, function(){<br> return {answer:42};<br>});//创建一个服务myService<br>m.controller(‘MyController’, function(myService){<br> //myService作为依赖存在<br>});</li>
+</ol>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>/2017/04/21/hello-world/</url>
+      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[hexo+git建立个人博客网站]]></title>
+      <url>/2016/05/02/hexo-git%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</url>
+      <content type="html"><![CDATA[<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><blockquote>
+<p>廖雪峰的官方网站：<a href="http://www.liaoxuefeng.com/" title="廖雪峰的官方网站" target="_blank" rel="external">http://www.liaoxuefeng.com/</a><br>（主要讲解github的使用和nodejs知识）<br><br>不如写的：<a href="http://ibruce.info/2013/11/22/hexo-your-blog/?utm_source=tuicool" title="hexo你的博客" target="_blank" rel="external">http://ibruce.info/2013/11/22/hexo-your-blog/?utm_source=tuicool</a>（十分精细和全面）<br><br>如何搭建一个独立博客：<a href="http://cnfeat.com/blog/2014/05/10/how-to-build-a-blog/" target="_blank" rel="external">http://cnfeat.com/blog/2014/05/10/how-to-build-a-blog/</a>（配置域名很详细）<br><br>hexo博客搭建教程：<a href="http://zipperary.com/2013/05/30/hexo-guide-4/" target="_blank" rel="external">http://zipperary.com/2013/05/30/hexo-guide-4/</a><br>（较为全面）<br></p>
+</blockquote>
+<p>最近我打算在github上搭建一个个人博客，网上搭建hexo个人博客的教程很多，我跟着搭建了一下感觉坑很多，程序员写的教程对于我们这些新人来说很多坑，所以我把自己搭建的过程写出来分享给大家，也是对自己学习的一个总结。<br></p>
+<hr style="border:1px solid red;">
+
+<p>首先，我们要选择生成网站的工具，以下为部分静态网站生成器简要列表：</p>
+<blockquote>
+<p> Ruby</p>
+<pre><code>Jekyll （github 默认pages 引擎）
+Octopress （兼容jekyll）
+</code></pre><p>Python</p>
+<pre><code>Hyde Jekyll的Python语言实现版本
+Cyrax 使用Jinja2模板引擎的生成器
+</code></pre><p>PHP</p>
+<pre><code>Phrozn PHP语言实现的静态网站
+</code></pre><p>JS</p>
+<pre><code>Hexo 基于node.js的静态博客框架
+</code></pre></blockquote>
+<p>根据列表里面的东西，作为一个前端我选了hexo（它在nodejs环境下，用的是javascript的语法，非常适合前端）。hexo的基本知识可以自行查阅，这是一个台湾大学生开发的，特别的厉害，学了之后也很好理解。<br>下面开始我们的搭建过程：</p>
+<h2 id="1-安装git和nodejs"><a href="#1-安装git和nodejs" class="headerlink" title="1.安装git和nodejs"></a>1.安装git和nodejs</h2><p>这个网上的教程非常多，我用的是廖雪峰的官方网站，写的很详细：<a href="http://www.liaoxuefeng.com/" title="廖雪峰的官方网站" target="_blank" rel="external">http://www.liaoxuefeng.com/</a></p>
+<p>这个里面需要注意的几点：</p>
+<ol>
+<li>最新版nodejs里面已经集成了npm，所以有的教程里面hexo init命令后不需要npm install。我的nodejs版本是v5.9.0。git的版本并不影响我们搭建hexo网站，所以不用去管</li>
+<li>git安装完后要设置，<br> <code>$ git config --global user.name &quot;Your Name&quot;</code><br> <code>$ git config --global user.email &quot;email@example.com&quot;</code><br>这两条命令实际上就是在git上自报家门，把你的电脑和你的账号关联起来。</li>
+</ol>
+<h2 id="2-安装hexo模块"><a href="#2-安装hexo模块" class="headerlink" title="2.安装hexo模块"></a>2.安装hexo模块</h2><p>在命令行环境下(ctrl+r打开运行程序，输入cmd出现命令行)输入</p>
+<pre><code>npm install -g hexo 
+</code></pre><p>安装hexo模块。安装成功后显示如图：</p>
+<p><img src="http://i.imgur.com/8COXK0d.png" alt="hexo模块安装成功"></p>
+<p><em>可以看到我们安装的是hexo版本是3.2.0.网上很多的教程是13年或14年写的，他们的hexo版本大多是2.x的所以有时候你会发现操作命令有所不同。</em></p>
+<p>在命令行中使用cd命令转入要安装hexo目录下。</p>
+<p><img src="http://i.imgur.com/umi6eUO.png" alt="转入hexo初始化目录"></p>
+<p>初始化hexo（花费时间比较长，每次初始化都代表建立一个网站，所以如果你打算重新开始，就把原来的文件夹删了，再次初始化即可）：</p>
+<p><img src="http://i.imgur.com/25esYwE.png" alt="hexo初始化成功"></p>
+<p>到此，hexo就安装成功了</p>
+<h2 id="3-写文章"><a href="#3-写文章" class="headerlink" title="3. 写文章"></a>3. 写文章</h2><p>在命令行输入<br>    hexo new [layout] “博客名字”<br>在\hexo\source_posts目录下就会生成一个.md格式的文件，我们在这个文件里面编辑自己的文章就行了</p>
+<h2 id="4-启动本地服务"><a href="#4-启动本地服务" class="headerlink" title="4.启动本地服务"></a>4.启动本地服务</h2><p>可以预览网站。命令行输入：</p>
+<pre><code>hexo server
+</code></pre><p>在浏览器里输入<a href="http://localhost:4000就能看到效果。" target="_blank" rel="external">http://localhost:4000就能看到效果。</a><br></p>
+<ul>
+<li>注意：在以后启动的时候要在hexo\下使用右键的git Bash命令行来启用hexo server，这样更方便一点。 *</li>
+</ul>
+<h2 id="5-生成静态网页"><a href="#5-生成静态网页" class="headerlink" title="5.生成静态网页"></a>5.生成静态网页</h2><p>cd到hexo的init目录（上一步hexo的安装目录d:\hexo\）</p>
+<pre><code>hexo generate
+</code></pre><p>生成网页成功，命令行返回一个hexo generated的值。命令必须在init目录下执行，否则不成功。网页所有的内容都在hexo\public\里面放着。</p>
+<h2 id="6-把hexo网站部署到github上去："><a href="#6-把hexo网站部署到github上去：" class="headerlink" title="6.把hexo网站部署到github上去："></a>6.把hexo网站部署到github上去：</h2><p><em>下面是我遇到的一个大坑：</em><br>按照教程，使用 hexo deploly命令就能将网站部署到github上了，但是，我没有成功，上面显示</p>
+<pre><code>$ hexo deploy
+ERROR Deployer not found: git
+</code></pre><p>*我在网上查了很多资料包括去查hexo github项目上的问题解答，发现这个问题很常见，但我的问题并非没加空格，而是版本问题，下面是我在网上找到的解决方案。<br><a href="https://github.com/hexojs/hexo/issues/1154" target="_blank" rel="external">https://github.com/hexojs/hexo/issues/1154</a></p>
+<blockquote>
+<p>in hexo 3.2, it is necessary to add following in the _config.yml:</p>
+</blockquote>
+<pre><code>plugins:
+ - hexo-server
+ - hexo-deployer-git
+</code></pre><p>在hexo3.2.0版本中 hexo-deployer-gitand hexo-sever.是分开配置的，所以要重新安装hexo-deployer-git</p>
+<pre><code>npm install hexo-deployer-git --save
+</code></pre><p>plugins: </p>
+<ul>
+<li>hexo-server  </li>
+<li>hexo-deployer-git</li>
+</ul>
+<p>还有另一个思路：</p>
+<p>hexo的deploy命令也是基于git远程推送的功能，那么我不使用hexo deply命令，而是直接在hexo的public文件夹下建立git库（public里面就是我们发布的网站内容，必须在运行过hexo generate命令后才会生成，而且每次添加博客都是在这个文件夹里面更新，正好可以拿来当作git仓库），直接推送到github，这样行不行？我开始尝试：</p>
+<p>首先我们找到..\hexo\public文件夹，直接输入创建版本库命令：</p>
+<pre><code>$ git init
+</code></pre><p>然后版本库就好了，但是我们里面已经放了网站，命令行却显示：</p>
+<pre><code>Initialized empty Git repository in D:/hexo/public/.git/（这是一个空的库）
+</code></pre><p>这个时候我们就要先add再commit了<br>    $git add -A<br>    $git commit -m “hexo个人博客站”<br>需要注意：git commit命令后必须跟注释-m “”，否则就会出现一堆的红色代码（把人吓懵了）</p>
+<p>然后跟自己的账号关联，在推送（下面的是廖雪峰官网上的代码，git关联和推送需要自己在网上学）<br>    $ git remote add origin git@github.com:michaelliao/learngit.git关联远程库<br>    $ git push -u origin master 推送网站到github</p>
+<p>然后我们就会发现网站出现在我们的github上了。</p>
+<hr>
+<p>最后有一个问题，所有的文件都已经正确上传，但是样式无法加载，这是咋回事？</p>
+<p>这个就是路径问题：<img src="http://i.imgur.com/27a7yYD.png" alt=""><br>把这两项改一下就好了</p>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[onclick和onblur冲突问题]]></title>
+      <url>/2016/05/02/onclick%E5%92%8Conblur%E5%86%B2%E7%AA%81%E9%97%AE%E9%A2%98/</url>
+      <content type="html"><![CDATA[<h1 id="onclick和onblur的冲突问题"><a href="#onclick和onblur的冲突问题" class="headerlink" title="onclick和onblur的冲突问题"></a>onclick和onblur的冲突问题</h1><p>新浪首页的搜索框里面有一个使用ajax的下拉框。我们需要实现一个点击下拉框里面的一项，让搜索框里面的值变成这一项，同时下拉框消失的效果，但同时在点击其他地方的时候，这个下拉框也要消失。大致如图：<br> </p>
+<p><img src="http://i.imgur.com/HjzVyIE.png" alt="新浪搜索框示意图"></p>
+<p>我们同时使用onblur和onclick来使下拉框隐藏，但是更大的问题出现了，这两个功能相冲突，onblur过于强悍，根本没有onclick方法实现的机会，搜索框无法获取点击项的内容。这个就是我们想要解决的onclick和onblur冲突问题。</p>
+<p>对应这个问题，这里我们介绍两种解决办法：</p>
+<ol>
+<li>使用setTimeout来使onblur时间延期执行，使onclick执行完后再执行onblur。（其中setTimeout的时间设定应该在100ms以上，否则依旧不行）示例代码如下：</li>
+</ol>
+<pre>
+<script>
+    window.onload=function(){
+        var oTxt = document.getElementsByClassName('txt');
+        var oBtn = document.getElementsByClassName('btn');
+            for(var i=0;i<oTxt.length;i++){
+                oTxt[i].style.width='100%';
+                oTxt[i].style.height='300px';
+                oBtn[i].index=i;
+                oBtn[i].onclick=function(){
+                    var oWin = window.open('about:blank');
+                    oWin.document.write(oTxt[this.index].value);
+                    oWin.document.close();
+                }
+            }
+    };
+</script>
+<code>
+<textarea class="txt">
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{  margin: 0; padding: 0;  list-style: none;  }
+        form{
+            width:500px;
+            margin:0 auto;
+            position:relative;
+            zoom:1;
+        }
+        form:after{
+            clear:both;
+            content:"";
+            display:block;
+        }
+        .text{
+            float:left;
+            border:1px solid #cccccc;
+            padding-left:14px;
+            width:300px;
+            height:34px;
+            line-height:34px;
+            font-size:14px;
+        }
+        .button{
+            width:50px;
+            height:34px;
+            border:1px solid #cccccc;
+            line-height:34px;
+            font-size:14px;
+            color:#ffffff;
+            background:#ff8400;
+        }
+        ul{
+            position:absolute;
+            top:36px;
+            left:0;
+            width:300px;
+            border-right:1px solid #cccccc;
+            border-left:1px solid #cccccc;
+            background:green;
+            display:none;
+        }
+        li{
+            font-size:14px;
+            line-height:34px;
+            height:34px;
+            color:#000000;
+            border-bottom:1px solid #cccccc;
+        }
+        li:hover{
+            background:yellow;
+            color:red;
+            cursor:pointer;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var oText=document.getElementById('text');
+            var oUl=document.getElementById('ul');
+            var aLi=oUl.getElementsByTagName('li');
+            var timer=null;
+            oText.onfocus=function(){
+                this.value='';
+                oUl.style.display='block';
+                for(var i=0;i<aLi.length;i++){
+                    aLi[i].onclick=function(){
+                        clearTimeout(timer);
+                        oText.value=this.innerHTML;
+                        oUl.style.display='none';
+                    };
+                }
+            };
+            oText.onblur=function(){
+                timer=setTimeout(function(){
+                    oUl.style.display='none';
+                    if(!oText.value){
+                        oText.value='请输入关键字';
+                    }
+                },120);
+            };
+        };
+    </script>        
+</head>
+<body>
+<form>
+    <input type="text" value="请输入关键字" id="text" class="text">
+    <input type="button" value="搜索" class="button">
+    <ul id="ul">
+        <li>返回窗口是否已被关闭</li>
+        <li>返回窗口的文档显示区的高度</li>
+        <li>返回窗口的文档显示区的宽度。</li>
+        <li>设置或返回窗口的名称。</li>
+        <li>返回窗口的外部高度。</li>
+    </ul>
+</form>
+
+</body>
+</html>
+</textarea>
+<input type="“submit”" value="运行代码" class="btn">
+</code></pre>
+
+<ol>
+<li>使用document.onmousedown来代替onblur实现隐藏下拉框功能,</li>
+</ol>
+<pre>
+<code>
+<textarea class="txt">
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{  margin: 0; padding: 0;  list-style: none;  }
+        form{
+            width:500px;
+            margin:0 auto;
+            position:relative;
+            zoom:1;
+        }
+        form:after{
+            clear:both;
+            content:"";
+            display:block;
+        }
+        .text{
+            float:left;
+            border:1px solid #cccccc;
+            padding-left:14px;
+            width:300px;
+            height:34px;
+            line-height:34px;
+            font-size:14px;
+        }
+        .button{
+            width:50px;
+            height:34px;
+            border:1px solid #cccccc;
+            line-height:34px;
+            font-size:14px;
+            color:#ffffff;
+            background:#ff8400;
+        }
+        ul{
+            position:absolute;
+            top:36px;
+            left:0;
+            width:300px;
+            border-right:1px solid #cccccc;
+            border-left:1px solid #cccccc;
+            background:green;
+            display:none;
+        }
+        li{
+            font-size:14px;
+            line-height:34px;
+            height:34px;
+            color:#000000;
+            border-bottom:1px solid #cccccc;
+        }
+        li:hover{
+            background:yellow;
+            color:red;
+            cursor:pointer;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var oText=document.getElementById('text');
+            var oUl=document.getElementById('ul');
+            var aLi=oUl.getElementsByTagName('li');
+            var timer=null;
+            oText.onfocus=function(){
+                this.value='';
+                oUl.style.display='block';
+                for(var i=0;i<aLi.length;i++){
+                    aLi[i].onclick=function(){
+                        clearTimeout(timer);
+                        oText.value=this.innerHTML;
+                        oUl.style.display='none';
+                    };
+                }
+            };
+
+            document.onmousedown=function(ev){
+                var oEvent=ev||event;
+                var target=oEvent.target||oEvent.srcElement;
+                    if(target.parentNode!==oUl&&target!==oText){
+                        oUl.style.display='none';
+                    }
+
+            };
+            oText.onblur=function(){
+                if(!oText.value){
+                    oText.value='请输入关键字';
+                }    
+            };
+        };
+    </script>        
+</head>
+<body>
+<form>
+    <input type="text" value="请输入关键字" id="text" class="text">
+    <input type="button" value="搜索" class="button">
+    <ul id="ul">
+        <li>返回窗口是否已被关闭</li>
+        <li>返回窗口的文档显示区的高度</li>
+        <li>返回窗口的文档显示区的宽度。</li>
+        <li>设置或返回窗口的名称。</li>
+        <li>返回窗口的外部高度。</li>
+    </ul>
+</form>
+
+</body>
+</html>
+</textarea>
+<input type="“submit”" value="运行代码" class="btn">
+</code></pre>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> Javascript </tag>
+            
+        </tags>
+        
+    </entry>
+    
+  
+  
+    
+    <entry>
+      <title><![CDATA[关于]]></title>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<p>大家好，我是XXX。欢迎来到我的个人技术博客。</p>
+<p>这里用markdown写下你的简介，就跟平时写md一样就可以了。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[网站书签]]></title>
+      <url>/marks/index.html</url>
+      <content type="html"><![CDATA[<h2 id="常用网站登录"><a href="#常用网站登录" class="headerlink" title="常用网站登录"></a>常用网站登录</h2><hr>
+<p><a href="http://pan.baidu.com/disk/home#list/path=%2F" title="百度云网盘登录" target="_blank" rel="external">百度云网盘登录</a></p>
+<p><a href="https://github.com/3Lweb" title="github" target="_blank" rel="external">github</a></p>
+<p><a href="https://www.cnblogs.com/" title="博客园" target="_blank" rel="external">博客园</a></p>
+<p><a href="http://http://m0.mail.sina.com.cn/classic/index.php#action=maillist&amp;fid=cur&amp;title=%25E8%258D%2589%25E7%25A8%25BF%25E5%25A4%25B9&amp;pagecount=0&amp;pageno=1&amp;order=htime&amp;sorttype=desc&amp;type=0&amp;tag=-1" title="新浪邮箱" target="_blank" rel="external">新浪邮箱</a></p>
+<p><a href="http://mail.163.com/js6/main.jsp?sid=rBmepbIiEjBvaQPFFwiiTzBMWQmENDiJ&amp;df=unknow#module=compose.ComposeModule%7C%7B%22type%22%3A%22compose%22%2C%22fullScreen%22%3Atrue%2C%22cid%22%3A%22c%3A1467118494055%22%7D" target="_blank" rel="external">网易邮箱</a></p>
+<h2 id="教程网站"><a href="#教程网站" class="headerlink" title="教程网站"></a>教程网站</h2><hr>
+<p><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" title="Git教程 - 廖雪峰的官方网站" target="_blank" rel="external">Git教程 - 廖雪峰的官方网站</a></p>
+<p><a href="http://nqdeng.github.io/7-days-nodejs/" title="7天学会nodejs" target="_blank" rel="external">7天学会nodejs</a></p>
+<h2 id="资源网址"><a href="#资源网址" class="headerlink" title="资源网址"></a>资源网址</h2><hr>
+<p><a href="http://cnodejs.org/topic/54128625351649283bcc5b30" title="Node.js 资源汇总 - CNode技术社区" target="_blank" rel="external">Node.js 资源汇总 - CNode技术社区</a></p>
+<p><a href="https://github.com/yuche/wechat-banks" title="中国各地银行列表" target="_blank" rel="external">中国各地银行列表</a></p>
+<p><a href="http://blog.csdn.net/anzhsoft/article/details/19563091" title="RabbitMQ消息队列（一）: Detailed Introduction 详细介绍" target="_blank" rel="external">RabbitMQ消息队列（一）: Detailed Introduction 详细介绍</a></p>
+<p><a href="http://www.ruanyifeng.com/blog/2014/10/event-loop.html" title="JavaScript 运行机制详解：再谈Event Loop（阮一峰）" target="_blank" rel="external">JavaScript 运行机制详解：再谈Event Loop（阮一峰）</a></p>
+<p><a href="http://blog.fens.me/series-nodejs/" title="从零开始nodejs系列文章" target="_blank" rel="external">从零开始nodejs系列文章</a></p>
+<p><a href="http://blog.51yip.com/" title="海底苍鹰的博客（一些php，linux等的问题）" target="_blank" rel="external">海底苍鹰的博客（一些php，linux等的问题）</a></p>
+<p><a href="https://github.com/jobbole/awesome-javascript-cn" title="JavaScript 资源大全中文版" target="_blank" rel="external">JavaScript 资源大全中文版</a></p>
+<p><a href="http://www.html5tricks.com/category/html5-demo" title="HTML5学习交流平台" target="_blank" rel="external">HTML5学习交流平台</a></p>
+<p><a href="http://huaban.com/pins/627084110" title="花瓣网" target="_blank" rel="external">花瓣网</a></p>
+<h2 id="工具项目网站"><a href="#工具项目网站" class="headerlink" title="工具项目网站"></a>工具项目网站</h2><hr>
+<p><a href="http://loopback.io/" title="接口开发项目（快速生成restful接口）" target="_blank" rel="external">接口开发项目（快速生成restful接口）</a></p>
+<p><a href="http://www.daterangepicker.com/#examples" title="时间插件daterangepicker" target="_blank" rel="external">时间插件daterangepicker</a></p>
+<p><a href="http://echarts.baidu.com/echarts2/doc/example.html" title="echarts example" target="_blank" rel="external">echarts examples</a></p>
+<p><a href="http://www.jq22.com/" title="jquery插件网" target="_blank" rel="external">jquery插件网</a></p>
+<p><a href="https://isux.tencent.com/great-mobile-h5-pages.html" title="那些过目不忘的H5页面" target="_blank" rel="external">那些过目不忘的H5页面</a></p>
+<h2 id="流量监控相关（抓包和Android系统）"><a href="#流量监控相关（抓包和Android系统）" class="headerlink" title="流量监控相关（抓包和Android系统）"></a>流量监控相关（抓包和Android系统）</h2><hr>
+<p><a href="http://xlover.iteye.com/blog/1358301" title="android如何开发流量监控软件" target="_blank" rel="external">android如何开发流量监控软件</a></p>
+<p><a href="https://github.com/JZ-Darkal/AndroidHttpCapture" title="AndroidHttpCapture网络诊断工具（一个手机流量监控app实例）" target="_blank" rel="external">AndroidHttpCapture网络诊断工具（一个手机流量监控app实例）</a></p>
+<p><a href="https://www.zhihu.com/question/20467503" title="如何在 Android 手机上实现抓包？" target="_blank" rel="external">如何在 Android 手机上实现抓包？</a></p>
+<p><a href="http://www.trinea.cn/android/tcpdump_wireshark/" title="Android利用tcpdump和wireshark抓取网络数据包" target="_blank" rel="external">Android利用tcpdump和wireshark抓取网络数据包</a></p>
+<p><a href="http://www.cnblogs.com/anee/archive/2013/09/12/3316139.html" title="如何在Android智能手机上捕获数据包？" target="_blank" rel="external">如何在Android智能手机上捕获数据包</a></p>
+<p><a href="http://blog.csdn.net/howeverpf/article/details/10517351" title="基于 tcpdump for Android 的智能移动终端数据包捕获完整解决方案" target="_blank" rel="external">基于 tcpdump for Android 的智能移动终端数据包捕获完整解决方案</a></p>
+<p><a href="http://blog.csdn.net/jsqfengbao/article/details/52462125" title="使用Android系统自带的VpnService截取流量" target="_blank" rel="external">使用Android系统自带的VpnService截取流量</a></p>
+<p><a href="http://blog.csdn.net/jsqfengbao/article/details/53412858#comments" title="Android免root流量防火墙，简单小程序" target="_blank" rel="external">Android免root流量防火墙，简单小程序</a></p>
+<p><a href="http://www.android-doc.com/index.html" title="Android官网API" target="_blank" rel="external">Android官网API</a></p>
+<h2 id="Websocket相关"><a href="#Websocket相关" class="headerlink" title="Websocket相关"></a>Websocket相关</h2><hr>
+<p><a href="https://msdn.microsoft.com/library/hh673567.aspx" title="Websocket API" target="_blank" rel="external">Websocket API</a></p>
+<h2 id="微服务"><a href="#微服务" class="headerlink" title="微服务"></a>微服务</h2><hr>
+<p><a href="http://mt.sohu.com/20160203/n436809403.shtml" title="微服务概念解析" target="_blank" rel="external">微服务概念解析</a></p>
+<p><a href="http://kb.cnblogs.com/page/521880/" title="微服务实战（一）：微服务架构的优势与不足" target="_blank" rel="external">微服务实战</a></p>
+<p><a href="https://github.com/zeit/micro" title="开源微服务项目" target="_blank" rel="external">开源微服务项目</a></p>
+<h2 id="angular框架"><a href="#angular框架" class="headerlink" title="angular框架"></a>angular框架</h2><hr>
+<p><a href="http://www.kancloud.cn/digest/angularjs-sunny1989/122835" title="Angularjs进阶" target="_blank" rel="external">Angularjs进阶</a></p>
+<p><a href="https://code.angularjs.org/" title="angular源码下载" target="_blank" rel="external">angular源码下载</a></p>
+<p><a href="http://www.angularjs.cn/A0BL" title="angular源码分析" target="_blank" rel="external">angular源码分析</a></p>
+<p><a href="https://angular.cn/translate/cn/home.html" title="angular中文官网" target="_blank" rel="external">angular中文官网</a></p>
+<p><a href="https://www.gitbook.com/book/xdsnet/angular-phonecat-book-zhcn/details" title="angular-phonecat教程中文版" target="_blank" rel="external">angular-phonecat教程中文版</a></p>
+<p><a href="https://github.com/aaronallport/generator-angular-require" title="AngularJS-RequireJS generator" target="_blank" rel="external">AngularJS-RequireJS generator</a></p>
+<h2 id="AI与PS"><a href="#AI与PS" class="headerlink" title="AI与PS"></a>AI与PS</h2><p><a href="http://www.uisdc.com/ai-create-skeuomorphism-socket" title="AI教程！手把手教你绘制超拟物的插座适配器" target="_blank" rel="external">AI教程！手把手教你绘制超拟物的插座适配器</a></p>
+<p><a href="http://www.uisdc.com/ai-create-switch-button" title="AI精品教程！手把手教你绘制一个高科技电源按钮" target="_blank" rel="external">AI精品教程！手把手教你绘制一个高科技电源按钮</a></p>
+<p><a href="http://www.ui.cn/detail/203301.html" title="用PS和AI制作出小黄人的设计教程" target="_blank" rel="external">用PS和AI制作出小黄人的设计教程</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[读书]]></title>
+      <url>/reading/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[在线测试]]></title>
+      <url>/testOnline/index.html</url>
+      <content type="html"><![CDATA[<p><a href="../html/index.html" title="数据结构在线测试"> 数据结构在线测试 </a></p>
+]]></content>
+    </entry>
+    
+  
+</search>
