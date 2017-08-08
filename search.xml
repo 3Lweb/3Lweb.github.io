@@ -604,7 +604,9 @@ JS 各种引擎介绍
     <entry>
       <title><![CDATA[websocket如何实现与设备进行通信]]></title>
       <url>/2017/04/22/websocket%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%8E%E8%AE%BE%E5%A4%87%E8%BF%9B%E8%A1%8C%E9%80%9A%E4%BF%A1/</url>
-      <content type="html"></content>
+      <content type="html"><![CDATA[<p><a href="http://www.tuicool.com/articles/7zyMvy6" target="_blank" rel="external">http://www.tuicool.com/articles/7zyMvy6</a><br>Websocket原理<br><a href="http://www.jianshu.com/p/42260a2575f8" target="_blank" rel="external">http://www.jianshu.com/p/42260a2575f8</a><br>1小时教你理解HTTP，TCP，UDP，Socket，WebSocket<br><a href="http://www.cnblogs.com/xcong/p/4155577.html" target="_blank" rel="external">http://www.cnblogs.com/xcong/p/4155577.html</a><br>WebSocket使用SuperWebSocket结合WindowsService实现实时消息</p>
+<p><a href="http://blog.csdn.net/yinqingwang/article/details/52565133" target="_blank" rel="external">http://blog.csdn.net/yinqingwang/article/details/52565133</a><br>WebSocket原理及技术简介</p>
+]]></content>
       
         
     </entry>
@@ -1349,13 +1351,6 @@ ERROR Deployer not found: git
     </entry>
     
     <entry>
-      <title><![CDATA[在线测试]]></title>
-      <url>/testOnline/index.html</url>
-      <content type="html"><![CDATA[<p><a href="../html/index.html" title="数据结构在线测试"> 数据结构在线测试 </a></p>
-]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[网站书签]]></title>
       <url>/marks/index.html</url>
       <content type="html"><![CDATA[<h2 id="常用网站登录"><a href="#常用网站登录" class="headerlink" title="常用网站登录"></a>常用网站登录</h2><hr>
@@ -1409,6 +1404,13 @@ ERROR Deployer not found: git
 <h2 id="AI与PS"><a href="#AI与PS" class="headerlink" title="AI与PS"></a>AI与PS</h2><p><a href="http://www.uisdc.com/ai-create-skeuomorphism-socket" title="AI教程！手把手教你绘制超拟物的插座适配器" target="_blank" rel="external">AI教程！手把手教你绘制超拟物的插座适配器</a></p>
 <p><a href="http://www.uisdc.com/ai-create-switch-button" title="AI精品教程！手把手教你绘制一个高科技电源按钮" target="_blank" rel="external">AI精品教程！手把手教你绘制一个高科技电源按钮</a></p>
 <p><a href="http://www.ui.cn/detail/203301.html" title="用PS和AI制作出小黄人的设计教程" target="_blank" rel="external">用PS和AI制作出小黄人的设计教程</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[在线测试]]></title>
+      <url>/testOnline/index.html</url>
+      <content type="html"><![CDATA[<p><a href="../html/index.html" title="数据结构在线测试"> 数据结构在线测试 </a></p>
 ]]></content>
     </entry>
     
