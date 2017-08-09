@@ -11,7 +11,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[js]]></title>
+      <title><![CDATA[js中的map]]></title>
       <url>/2017/08/09/js%E4%B8%AD%E7%9A%84map/</url>
       <content type="html"><![CDATA[<p><a href="http://www.ruanyifeng.com/blog/2013/01/javascript_source_map.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2013/01/javascript_source_map.html</a><br>JavaScript Source Map 详解</p>
 <p>这个阮一峰的教程讲的其实是source map，就是压缩后的代码跟压缩之前的代码相对应的一种方式，可以通过chrome浏览器的支持来对压缩代码进行调试。这个也算一个知识点。</p>
@@ -1361,6 +1361,14 @@ ERROR Deployer not found: git
   
     
     <entry>
+      <title><![CDATA[关于]]></title>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<p>大家好，我是XXX。欢迎来到我的个人技术博客。</p>
+<p>这里用markdown写下你的简介，就跟平时写md一样就可以了。</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[网站书签]]></title>
       <url>/marks/index.html</url>
       <content type="html"><![CDATA[<h2 id="常用网站登录"><a href="#常用网站登录" class="headerlink" title="常用网站登录"></a>常用网站登录</h2><hr>
@@ -1414,14 +1422,6 @@ ERROR Deployer not found: git
 <h2 id="AI与PS"><a href="#AI与PS" class="headerlink" title="AI与PS"></a>AI与PS</h2><p><a href="http://www.uisdc.com/ai-create-skeuomorphism-socket" title="AI教程！手把手教你绘制超拟物的插座适配器" target="_blank" rel="external">AI教程！手把手教你绘制超拟物的插座适配器</a></p>
 <p><a href="http://www.uisdc.com/ai-create-switch-button" title="AI精品教程！手把手教你绘制一个高科技电源按钮" target="_blank" rel="external">AI精品教程！手把手教你绘制一个高科技电源按钮</a></p>
 <p><a href="http://www.ui.cn/detail/203301.html" title="用PS和AI制作出小黄人的设计教程" target="_blank" rel="external">用PS和AI制作出小黄人的设计教程</a></p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[关于]]></title>
-      <url>/about/index.html</url>
-      <content type="html"><![CDATA[<p>大家好，我是XXX。欢迎来到我的个人技术博客。</p>
-<p>这里用markdown写下你的简介，就跟平时写md一样就可以了。</p>
 ]]></content>
     </entry>
     
