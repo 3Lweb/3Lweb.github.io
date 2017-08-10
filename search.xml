@@ -3,6 +3,19 @@
   
     
     <entry>
+      <title><![CDATA[钩子函数与回调函数]]></title>
+      <url>/2017/08/10/%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0%E4%B8%8E%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/</url>
+      <content type="html"><![CDATA[<p><a href="http://blog.csdn.net/lipeionline/article/details/6369657" target="_blank" rel="external">http://blog.csdn.net/lipeionline/article/details/6369657</a><br>回调函数和钩子函数<br>这个里面的回调函数讲的还可以但是钩子函数说的太简略</p>
+<p><a href="https://segmentfault.com/q/1010000007480771?_ea=1358660" target="_blank" rel="external">https://segmentfault.com/q/1010000007480771?_ea=1358660</a><br>请问一下前端所说的钩子，或者钩子函数是什么意思？？？</p>
+<p>这个里面的答案解释了钩子函数，钩子函数其实就是设置一个事件触发器中作为<br>参数传入的函数，当事件触发器被启动的时候钩子函数就被执行了<br>例如：<br>xxx.on(‘click’, function(){</p>
+<p>});<br>这里面的function其实就是一个钩子函数</p>
+<p>但是钩子函数跟回调函数似乎还是有区别的。<br><a href="http://blog.csdn.net/haodawang/article/details/74505502" target="_blank" rel="external">http://blog.csdn.net/haodawang/article/details/74505502</a><br>这里面其实也说明了这一点，钩子函数可以当成是回调函数的一种，<br>他们的区别在于钩子在捕获消息的第一时间就会执行，回调函数会在整个捕获过程的最后进行执行<br>就我使用nodejs的经验来看，回调函数callback其实一直当成参数被传递，直到一系列异步事件执行完毕后，再去执行回调函数。</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[项目中webserver里面主链接和子链接]]></title>
       <url>/2017/08/09/%E9%A1%B9%E7%9B%AE%E4%B8%ADwebserver%E9%87%8C%E9%9D%A2%E4%B8%BB%E9%93%BE%E6%8E%A5%E5%92%8C%E5%AD%90%E9%93%BE%E6%8E%A5/</url>
       <content type="html"></content>
@@ -1361,10 +1374,15 @@ ERROR Deployer not found: git
   
     
     <entry>
-      <title><![CDATA[关于]]></title>
-      <url>/about/index.html</url>
-      <content type="html"><![CDATA[<p>大家好，我是XXX。欢迎来到我的个人技术博客。</p>
-<p>这里用markdown写下你的简介，就跟平时写md一样就可以了。</p>
+      <title><![CDATA[读书]]></title>
+      <url>/reading/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[在线测试]]></title>
+      <url>/testOnline/index.html</url>
+      <content type="html"><![CDATA[<p><a href="../html/index.html" title="数据结构在线测试"> 数据结构在线测试 </a></p>
 ]]></content>
     </entry>
     
@@ -1426,15 +1444,10 @@ ERROR Deployer not found: git
     </entry>
     
     <entry>
-      <title><![CDATA[读书]]></title>
-      <url>/reading/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[在线测试]]></title>
-      <url>/testOnline/index.html</url>
-      <content type="html"><![CDATA[<p><a href="../html/index.html" title="数据结构在线测试"> 数据结构在线测试 </a></p>
+      <title><![CDATA[关于]]></title>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<p>大家好，我是XXX。欢迎来到我的个人技术博客。</p>
+<p>这里用markdown写下你的简介，就跟平时写md一样就可以了。</p>
 ]]></content>
     </entry>
     
