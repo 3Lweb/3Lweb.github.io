@@ -132,6 +132,8 @@
       <url>/2017/05/23/fiddle%E4%BF%AE%E6%94%B9%E5%93%8D%E5%BA%94%E6%95%B0%E6%8D%AE/</url>
       <content type="html"><![CDATA[<p>修改请求内容和请求的响应内容</p>
 <p><a href="http://blog.csdn.net/liuquan0071/article/details/51917893" target="_blank" rel="external">http://blog.csdn.net/liuquan0071/article/details/51917893</a><br>抓包工具：Fiddler 修改请求表单和响应数据</p>
+<p>更新：<br>附件里面有fiddle的说明文档，详细介绍了fiddle的使用方法</p>
+<p>fiddle对于http请求的处理功能还是很强大的，不过唯一的缺点在于只能处理http请求</p>
 ]]></content>
       
         
@@ -1375,6 +1377,27 @@ ERROR Deployer not found: git
   
     
     <entry>
+      <title><![CDATA[关于]]></title>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<p>大家好，我是XXX。欢迎来到我的个人技术博客。</p>
+<p>这里用markdown写下你的简介，就跟平时写md一样就可以了。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[读书]]></title>
+      <url>/reading/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[在线测试]]></title>
+      <url>/testOnline/index.html</url>
+      <content type="html"><![CDATA[<p><a href="../html/index.html" title="数据结构在线测试"> 数据结构在线测试 </a></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[网站书签]]></title>
       <url>/marks/index.html</url>
       <content type="html"><![CDATA[<h2 id="常用网站登录"><a href="#常用网站登录" class="headerlink" title="常用网站登录"></a>常用网站登录</h2><hr>
@@ -1428,27 +1451,6 @@ ERROR Deployer not found: git
 <h2 id="AI与PS"><a href="#AI与PS" class="headerlink" title="AI与PS"></a>AI与PS</h2><p><a href="http://www.uisdc.com/ai-create-skeuomorphism-socket" title="AI教程！手把手教你绘制超拟物的插座适配器" target="_blank" rel="external">AI教程！手把手教你绘制超拟物的插座适配器</a></p>
 <p><a href="http://www.uisdc.com/ai-create-switch-button" title="AI精品教程！手把手教你绘制一个高科技电源按钮" target="_blank" rel="external">AI精品教程！手把手教你绘制一个高科技电源按钮</a></p>
 <p><a href="http://www.ui.cn/detail/203301.html" title="用PS和AI制作出小黄人的设计教程" target="_blank" rel="external">用PS和AI制作出小黄人的设计教程</a></p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[关于]]></title>
-      <url>/about/index.html</url>
-      <content type="html"><![CDATA[<p>大家好，我是XXX。欢迎来到我的个人技术博客。</p>
-<p>这里用markdown写下你的简介，就跟平时写md一样就可以了。</p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[读书]]></title>
-      <url>/reading/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[在线测试]]></title>
-      <url>/testOnline/index.html</url>
-      <content type="html"><![CDATA[<p><a href="../html/index.html" title="数据结构在线测试"> 数据结构在线测试 </a></p>
 ]]></content>
     </entry>
     
