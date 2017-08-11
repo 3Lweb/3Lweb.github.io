@@ -3,6 +3,17 @@
   
     
     <entry>
+      <title><![CDATA[JavaScript: apply 方法]]></title>
+      <url>/2017/08/11/JavaScript-apply-%E6%96%B9%E6%B3%95/</url>
+      <content type="html"><![CDATA[<p><a href="http://www.cnblogs.com/KeenLeung/archive/2012/11/19/2778229.html" target="_blank" rel="external">http://www.cnblogs.com/KeenLeung/archive/2012/11/19/2778229.html</a><br>深入学习JavaScript: apply 方法 详解</p>
+<p>之前网上查了一个方法：把一个对象的多个属性放置到数组里面<br>    dealDataArray.push.apply(dealDataArray, g_NewData[i].children);<br>数组的push方法返回的数组的新的长度，通过apply的方法将对象转变到添加完元素<br>后的数组，</p>
+<p>今天看到了这个博客，里面对apply和call做了介绍，有助于对这两个方法 的理解</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[钩子函数与回调函数]]></title>
       <url>/2017/08/10/%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0%E4%B8%8E%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/</url>
       <content type="html"><![CDATA[<p><a href="http://blog.csdn.net/lipeionline/article/details/6369657" target="_blank" rel="external">http://blog.csdn.net/lipeionline/article/details/6369657</a><br>回调函数和钩子函数<br>这个里面的回调函数讲的还可以但是钩子函数说的太简略</p>
