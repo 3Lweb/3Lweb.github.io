@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[页面陷入假死状态]]></title>
       <url>/2017/08/18/%E9%A1%B5%E9%9D%A2%E9%99%B7%E5%85%A5%E5%81%87%E6%AD%BB%E7%8A%B6%E6%80%81/</url>
-      <content type="html"><![CDATA[<p><a href="http://blog.csdn.net/kongls08/article/details/7108929" target="_blank" rel="external">http://blog.csdn.net/kongls08/article/details/7108929</a><br>浏览器经常卡死爱解放你的浏览器</p>
+      <content type="html"><![CDATA[<p><a href="http://blog.csdn.net/kongls08/article/details/7108929" target="_blank" rel="external">http://blog.csdn.net/kongls08/article/details/7108929</a><br>浏览器经常卡死</p>
 ]]></content>
       
         
@@ -1406,14 +1406,6 @@ ERROR Deployer not found: git
   
     
     <entry>
-      <title><![CDATA[关于]]></title>
-      <url>/about/index.html</url>
-      <content type="html"><![CDATA[<p>大家好，我是XXX。欢迎来到我的个人技术博客。</p>
-<p>这里用markdown写下你的简介，就跟平时写md一样就可以了。</p>
-]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[网站书签]]></title>
       <url>/marks/index.html</url>
       <content type="html"><![CDATA[<h2 id="常用网站登录"><a href="#常用网站登录" class="headerlink" title="常用网站登录"></a>常用网站登录</h2><hr>
@@ -1422,6 +1414,11 @@ ERROR Deployer not found: git
 <p><a href="https://www.cnblogs.com/" title="博客园" target="_blank" rel="external">博客园</a></p>
 <p><a href="http://http://m0.mail.sina.com.cn/classic/index.php#action=maillist&amp;fid=cur&amp;title=%25E8%258D%2589%25E7%25A8%25BF%25E5%25A4%25B9&amp;pagecount=0&amp;pageno=1&amp;order=htime&amp;sorttype=desc&amp;type=0&amp;tag=-1" title="新浪邮箱" target="_blank" rel="external">新浪邮箱</a></p>
 <p><a href="http://mail.163.com/js6/main.jsp?sid=rBmepbIiEjBvaQPFFwiiTzBMWQmENDiJ&amp;df=unknow#module=compose.ComposeModule%7C%7B%22type%22%3A%22compose%22%2C%22fullScreen%22%3Atrue%2C%22cid%22%3A%22c%3A1467118494055%22%7D" target="_blank" rel="external">网易邮箱</a></p>
+<h2 id="各个公司前端网址"><a href="#各个公司前端网址" class="headerlink" title="各个公司前端网址"></a>各个公司前端网址</h2><p><a href="https://tech.meituan.com/" title="https://tech.meituan.com/" target="_blank" rel="external">美团点评技术团队</a></p>
+<p><a href="https://75team.com/#openSource" title="https://75team.com/#openSource" target="_blank" rel="external">奇舞团，360最大的前端开发团队</a></p>
+<p><a href="http://fex.baidu.com/we-need-you/" title="http://fex.baidu.com/we-need-you/" target="_blank" rel="external">FEX.百度web前端研发部</a></p>
+<p><a href="http://www.alloyteam.com/" title="http://www.alloyteam.com/" target="_blank" rel="external">Alloyteam、腾讯前端开发</a></p>
+<p><a href="http://www.aliued.com/?cat=14" title="http://www.aliued.com/?cat=14" target="_blank" rel="external">阿里国际UED团队</a></p>
 <h2 id="教程网站"><a href="#教程网站" class="headerlink" title="教程网站"></a>教程网站</h2><hr>
 <p><a href="https://nodeschool.io/zh-cn/#workshoppers" title="NODESCHOOL 教你Web开发技能的开源课程" target="_blank" rel="external">NODESCHOOL教你Web开发技能的开源课程</a></p>
 <p><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" title="Git教程 - 廖雪峰的官方网站" target="_blank" rel="external">Git教程 - 廖雪峰的官方网站</a></p>
@@ -1472,16 +1469,24 @@ ERROR Deployer not found: git
     </entry>
     
     <entry>
-      <title><![CDATA[在线测试]]></title>
-      <url>/testOnline/index.html</url>
-      <content type="html"><![CDATA[<p><a href="../html/index.html" title="数据结构在线测试"> 数据结构在线测试 </a></p>
+      <title><![CDATA[读书]]></title>
+      <url>/reading/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[关于]]></title>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<p>大家好，我是XXX。欢迎来到我的个人技术博客。</p>
+<p>这里用markdown写下你的简介，就跟平时写md一样就可以了。</p>
 ]]></content>
     </entry>
     
     <entry>
-      <title><![CDATA[读书]]></title>
-      <url>/reading/index.html</url>
-      <content type="html"></content>
+      <title><![CDATA[在线测试]]></title>
+      <url>/testOnline/index.html</url>
+      <content type="html"><![CDATA[<p><a href="../html/index.html" title="数据结构在线测试"> 数据结构在线测试 </a></p>
+]]></content>
     </entry>
     
   
