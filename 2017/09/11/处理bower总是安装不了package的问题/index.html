@@ -7,13 +7,16 @@
 
     
 
-    <title>第 5 页 | Talk is cheap, show me the code</title>
+    <title>处理bower总是安装不了package的问题 | Talk is cheap, show me the code</title>
     <meta name="author" content="唐孟西">
+    
+    <meta name="description" content="现在开发多用yeoman来进行开发，在开发过程中，前端的依赖包都是使用bower来进行安装的，但是经常就是下载不了package特别的苦恼，这里顺便要抱怨一下github，不是一般的慢!!
+后来在stackoverflow找到一个方法，记录一下，它的思路是用https的协议去访问和下载，而不用bow">
     
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    
+    <meta property="og:title" content="处理bower总是安装不了package的问题"/>
     <meta property="og:site_name" content="3Lweb"/>
 
     
@@ -207,296 +210,91 @@
 
 
     <main>
+        <div class="container main-container">
+    <nav class="page-nav hide-on-small-only">
+    <div class="nav-wrapper indigo">
+        <span class="breadcrumb">当前位置（分类目录）</span>
+        
+            
+
         
 
+        
+    </div>
+</nav>
 
-
-<div id="article-list" class="container main-container">
-    
-        <article class="simple-article">
+<article>
     <div class="card">
         <div class="card-content">
+            
+
             <div class="article-title">
                 
     
-        <h1 class="indigo-link-context"><a href="/2017/04/22/原生js是如何在浏览器中实现的/">原生js是如何在浏览器中实现的</a></h1>
+        <h1>处理bower总是安装不了package的问题</h1>
     
 
 
             </div>
+            <time class="pink-link-context" datetime="2017-09-11T01:09:08.000Z"><a href="/2017/09/11/处理bower总是安装不了package的问题/">2017-09-11</a></time>
 
-            <time class="pink-link-context" datetime="2017-04-22T08:33:33.000Z"><a href="/2017/04/22/原生js是如何在浏览器中实现的/">2017-04-22</a></time>
+            <span id="busuanzi_container_page_pv" class="read-times-container">
+    <i class="fa fa-eye"></i>
+    <span id="busuanzi_value_page_pv"></span>
+</span>
 
             
 
-
-            
-        </div>
-
-        
-    </div>
-</article>
-
+            <div class="toc pink-link-context hide-on-med-and-down">
     
-        <article class="simple-article">
-    <div class="card">
-        <div class="card-content">
-            <div class="article-title">
+</div>
+
+
+            <div class="entry pink-link-context">
+                <p>现在开发多用yeoman来进行开发，在开发过程中，前端的依赖包都是使用bower来进行安装的，但是经常就是下载不了package特别的苦恼，这里顺便要抱怨一下github，不是一般的慢!!</p>
+<p>后来在stackoverflow找到一个方法，记录一下，它的思路是用https的协议去访问和下载，而不用bower默认的git协议</p>
+<p>对全局的git做如下的配置：</p>
+<pre><code>git config --global url.&quot;https://&quot;.insteadOf git://
+</code></pre><p>参考StackOverflow的原文<br>    <a href="https://stackoverflow.com/questions/15669091/bower-install-using-only-https" target="_blank" rel="external">https://stackoverflow.com/questions/15669091/bower-install-using-only-https</a></p>
+
                 
-    
-        <h1 class="indigo-link-context"><a href="/2017/04/22/渲染html文件时需要的文档头如res-header等/">渲染html文件时需要的文档头如res.header等</a></h1>
-    
+<p class="pink-link-context">
+    <a href="/2017/08/18/页面陷入假死状态/" rel="next" title="页面陷入假死状态">
+    上一篇：页面陷入假死状态
+  </a>
+</p>
+
+
 
 
             </div>
-
-            <time class="pink-link-context" datetime="2017-04-22T08:33:06.000Z"><a href="/2017/04/22/渲染html文件时需要的文档头如res-header等/">2017-04-22</a></time>
-
-            
-
-
-            
+			
         </div>
-
-        
     </div>
 </article>
 
-    
-        <article class="simple-article">
-    <div class="card">
-        <div class="card-content">
-            <div class="article-title">
-                
-    
-        <h1 class="indigo-link-context"><a href="/2017/04/22/修改jar包/">修改jar包</a></h1>
-    
 
 
+
+    <section id="comment">
+        <div class="card">
+            <div class="card-content">
+                <!-- cloud_tie Comment BEGIN -->
+                <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+                <script>
+                  var cloudTieConfig = {
+                    url: document.location.href, 
+                    sourceId: "",
+                    productKey: "42e6f6b4094d4ac08da0b027a0ae01c9",
+                    target: "cloud-tie-wrapper"
+                  };
+                </script>
+                <script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
+                <!-- cloud_tie Comment END -->
             </div>
-
-            <time class="pink-link-context" datetime="2017-04-22T08:32:04.000Z"><a href="/2017/04/22/修改jar包/">2017-04-22</a></time>
-
-            
-
-
-            
         </div>
+    </section>
 
-        
-    </div>
-</article>
-
-    
-        <article class="simple-article">
-    <div class="card">
-        <div class="card-content">
-            <div class="article-title">
-                
-    
-        <h1 class="indigo-link-context"><a href="/2017/04/22/为什么程序中需要有保活机制/">为什么程序中需要有保活机制</a></h1>
-    
-
-
-            </div>
-
-            <time class="pink-link-context" datetime="2017-04-22T08:31:02.000Z"><a href="/2017/04/22/为什么程序中需要有保活机制/">2017-04-22</a></time>
-
-            
-
-
-            
-        </div>
-
-        
-    </div>
-</article>
-
-    
-        <article class="simple-article">
-    <div class="card">
-        <div class="card-content">
-            <div class="article-title">
-                
-    
-        <h1 class="indigo-link-context"><a href="/2017/04/22/使用nginx实现反向代理/">使用nginx实现反向代理</a></h1>
-    
-
-
-            </div>
-
-            <time class="pink-link-context" datetime="2017-04-22T08:29:55.000Z"><a href="/2017/04/22/使用nginx实现反向代理/">2017-04-22</a></time>
-
-            
-
-
-            
-        </div>
-
-        
-    </div>
-</article>
-
-    
-        <article class="simple-article">
-    <div class="card">
-        <div class="card-content">
-            <div class="article-title">
-                
-    
-        <h1 class="indigo-link-context"><a href="/2017/04/22/使用grunt规范开发nodejs/">使用grunt规范开发nodejs</a></h1>
-    
-
-
-            </div>
-
-            <time class="pink-link-context" datetime="2017-04-22T08:28:38.000Z"><a href="/2017/04/22/使用grunt规范开发nodejs/">2017-04-22</a></time>
-
-            
-
-
-            
-        </div>
-
-        
-    </div>
-</article>
-
-    
-        <article class="simple-article">
-    <div class="card">
-        <div class="card-content">
-            <div class="article-title">
-                
-    
-        <h1 class="indigo-link-context"><a href="/2017/04/22/如何在Android智能手机上捕获数据包？/">如何在Android智能手机上捕获数据包？</a></h1>
-    
-
-
-            </div>
-
-            <time class="pink-link-context" datetime="2017-04-22T08:27:30.000Z"><a href="/2017/04/22/如何在Android智能手机上捕获数据包？/">2017-04-22</a></time>
-
-            
-
-
-            
-        </div>
-
-        
-    </div>
-</article>
-
-    
-        <article class="simple-article">
-    <div class="card">
-        <div class="card-content">
-            <div class="article-title">
-                
-    
-        <h1 class="indigo-link-context"><a href="/2017/04/22/如何用-CSS-实现多行文本的省略号显示/">如何用 CSS 实现多行文本的省略号显示</a></h1>
-    
-
-
-            </div>
-
-            <time class="pink-link-context" datetime="2017-04-22T08:26:04.000Z"><a href="/2017/04/22/如何用-CSS-实现多行文本的省略号显示/">2017-04-22</a></time>
-
-            
-
-
-            
-        </div>
-
-        
-    </div>
-</article>
-
-    
-        <article class="simple-article">
-    <div class="card">
-        <div class="card-content">
-            <div class="article-title">
-                
-    
-        <h1 class="indigo-link-context"><a href="/2017/04/22/如何调用angular中使用的参数/">如何调用angular中使用的参数</a></h1>
-    
-
-
-            </div>
-
-            <time class="pink-link-context" datetime="2017-04-22T08:25:11.000Z"><a href="/2017/04/22/如何调用angular中使用的参数/">2017-04-22</a></time>
-
-            
-
-
-            
-        </div>
-
-        
-    </div>
-</article>
-
-    
-        <article class="simple-article">
-    <div class="card">
-        <div class="card-content">
-            <div class="article-title">
-                
-    
-        <h1 class="indigo-link-context"><a href="/2017/04/22/强大的webstrom/">强大的webstrom</a></h1>
-    
-
-
-            </div>
-
-            <time class="pink-link-context" datetime="2017-04-22T08:24:53.000Z"><a href="/2017/04/22/强大的webstrom/">2017-04-22</a></time>
-
-            
-
-
-            
-        </div>
-
-        
-    </div>
-</article>
-
-    
-
-    <ul class="pagination center-align">
-    <li class="">
-        <a href="/page/4/"><i class="fa fa-angle-left"></i></a>
-    </li>
-    
-    
-        <li class="waves-effect"><a href="/">1</a></li>
-    
-        <li class="waves-effect"><a href="/page/2">2</a></li>
-    
-        <li class="waves-effect"><a href="/page/3">3</a></li>
-    
-        <li class="waves-effect"><a href="/page/4">4</a></li>
-    
-        <li class="active pink"><a href="/page/5">5</a></li>
-    
-        <li class="waves-effect"><a href="/page/6">6</a></li>
-    
-        <li class="waves-effect"><a href="/page/7">7</a></li>
-    
-        <li class="waves-effect"><a href="/page/8">8</a></li>
-    
-        <li class="waves-effect"><a href="/page/9">9</a></li>
-    
-        <li class="waves-effect"><a href="/page/10">10</a></li>
-    
-        <li class="waves-effect"><a href="/page/11">11</a></li>
-    
-    
-    <li class="">
-        <a href="/page/6/"><i class="fa fa-angle-right"></i></a>
-    </li>
- </ul>
 
 </div>
 
