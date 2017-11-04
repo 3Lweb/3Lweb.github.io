@@ -1,0 +1,348 @@
+html{
+			font-size: 20px;
+		}
+		header{
+			width:16rem;
+			height:2.55rem;
+			background: linear-gradient(#fff,#ebebeb);
+		}
+		header h1{
+			width: 100%；
+			height:100%;
+			color: #d51938;
+			text-align: center;
+			font-size: 0.95rem;
+			line-height: 2.55rem;
+		}
+		header{
+			height:2.525rem; 
+			width:16rem; 
+			background:-webkit-linear-gradient(#fff,#ebebeb); 
+			background:-moz-linear-gradient(#fff,#ebebeb); 
+			position:relative; 
+			text-align:center;
+		}
+		header .back{
+			position:absolute; 
+			left:0.55rem; 
+			top:0.55rem; 
+			width:3rem; 
+			height:1.45rem; 
+			background:url('http://o772ons67.bkt.clouddn.com/back_btn.png') no-repeat; 
+			background-size:100%; 
+			text-indent:-99999rem;
+			cursor:pointer;
+		}
+		header img{
+			width:9.4rem;
+			height:2.2rem; 
+			margin-top:0.175rem;
+			cursor:pointer;
+		}
+		.show{
+			width: 16rem;
+			height:8.475rem;
+			position: relative;
+			overflow: hidden;
+		}
+		.show .showImg{
+			position:absolute;
+			-webkit-transform:translate3d(-16rem,0,0);
+			height:6.675rem;
+		}
+		.show .showImg li{
+			float:left;
+			width:16rem;
+			height: 6.675rem;
+
+		}
+	/*	.show .showImg .on{
+			display: block;
+		}*/
+		.show .showImg img{
+			width:16rem;
+			height:6.675rem;
+		}
+		.showbtn{
+			position: absolute;
+			left:50%;
+			top:7.2rem;
+			margin-left: -1.25rem;
+			/*width: 2.5rem;*/
+			height:0.25rem;
+		}
+		.showbtn li{
+			width:0.25rem;
+			height:0.25rem;
+			border-radius: 50%;
+			background: #a9a9a9;
+			float: left;
+			margin-right: 0.25rem;
+		}
+		.showbtn .active{
+			background: #ff4300;
+		}
+
+		.nav{
+			width:14.675rem;
+			padding-left: 1.325rem;
+			padding-bottom: 0.1rem
+		}
+		.nav ul{
+			margin-right:-1.8rem;
+		}
+		.nav li{
+			float: left;
+			width: 2.025rem;
+			height:3.475rem;
+			margin-right: 1.8rem;
+			margin-bottom: 0.55rem;
+		}
+		.nav a span{
+			display: block;
+			width:2.025rem;
+			height:2.025rem;
+			border-radius: 50%;
+			background: red;
+		}
+		.nav a p{
+			width:2.025rem;
+			height:1.45rem;
+			text-align: center;
+			line-height: 1.45rem;
+			font-size: 0.55rem;
+		}
+		.iconfont {     
+		  text-align: center;
+		  line-height: 2.025rem;
+		  font-size: 0.9rem;
+		  color: #fff;
+		}
+		.nav a .shangpin{
+			background:#da3809; 
+		}
+		.nav a .shenghuo{
+			background:#18a78c; 
+		}
+		.nav a .pinpai{
+			background:#000000; 
+		}
+		.nav a .jubaopen{
+			background:#ff529d; 
+		}
+		.nav a .jumingpin{
+			background:#cfa871; 
+		}
+		.nav a .jujiazhuang{
+			background:#ffb021; 
+		}
+		.nav a .jutou{
+			background:#a1c36f; 
+		}
+		.nav a .kehuduan{
+			background:#f5493c; 
+		}
+		.list{
+			width: 15rem;
+			margin:0 auto;
+		}
+		.list h2{
+			width:15rem;
+			height:1.8rem;
+			line-height: 1.8rem;
+			border-bottom: 0.1rem solid #dcdcdc;
+			margin-bottom: 0.775rem;
+			color: #333333;
+
+		}
+		.list h2 span{
+			float: left;
+			height:0.75rem;
+			line-height: 0.75rem;
+			border-left: 0.1rem solid #d51938;
+			padding-left: 0.45rem;
+			font-size: 0.65rem;
+		}
+		.list h2 em{
+			float: right;
+			height: 0.75rem;
+			line-height: 0.75rem;
+			font-weight: bold;
+			font-size: 0.65rem;
+		}
+		.list ul li{
+			height: 3rem;
+			margin-bottom: 0.5rem;
+		}
+		.list ul li a div{
+			float: left;
+			width: 1.5rem;
+			height: 3rem;
+			text-align: center;
+			line-height: 3rem;
+			color: #fff;
+			font-size: 0.9rem;
+		}
+		.list ul li a img{
+			float: left;
+			width: 4.5rem;
+			height: 3rem;
+		}
+		.list ul li a span{
+			float: left;
+			width:7.9rem;
+			height: 3rem;
+			background: #f4f4f4;
+			padding:0 0.55rem;
+			color:#999999;
+		}
+		.list ul li a span .left_txt{
+			width:4.5rem;
+			padding-top:0.6rem; 
+		}
+		.list ul li a span .left_txt p{
+			height:0.9rem;
+			line-height: 0.9rem;
+			font-size: 0.6rem;
+		}
+		.list ul li a span .right_txt{
+			font-size: 0.65rem;
+			line-height: 3rem;
+			color: #d51938;
+		}
+		.list ul li a span .right_txt strong{
+			color:#999999;
+		}
+		.left{
+			float: left;
+		}
+		.right{
+			float: right;
+		}
+		.old_price{
+			text-decoration: line-through;
+		}
+		.more{
+			display: block;
+			width:15rem;
+			height:2rem;
+			text-align: center;
+			line-height: 2rem;
+			font-size: 0.65rem;
+			background: #f5f5f5;
+			margin:0 auto;
+			margin-bottom: 0.5rem;
+			color: #666666;
+		}
+		.group{
+			width:15rem;
+			height:8.8rem;
+			margin: 0 auto 0.5rem;
+		}
+		.group img{
+			width:3.75rem;
+			height:8.8rem;
+			overflow: hidden;
+		}
+		.group .group_nav{
+			float: right;
+			width: 11.2rem;
+			border-left:0.025rem solid #eeeeee ;
+			border-top:0.025rem solid #eeeeee ;
+		}
+		.group .group_nav a{
+			float: left;
+			width:33.3%;
+			height:25%;
+			font-size: 0.625rem;
+			text-align: center;
+			line-height: 2.15rem;
+			text-overflow:ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+			border-right:0.025rem solid #eeeeee ;
+			border-bottom:0.025rem solid #eeeeee ;
+			box-sizing:border-box;
+		}
+		.group .group_nav .hot{
+			color: red;
+		}
+		.download{
+			width:15rem;
+			height:3.975rem;
+			border-top:0.025rem solid #eeeeee;
+			border-left:0.025rem solid #eeeeee;
+			margin:0 auto 0.7rem;
+		}
+		.download ul li{
+			width:4.975rem;
+			height:3.95rem;
+			float: left;
+			border-right:0.025rem solid #eeeeee;
+			border-bottom:0.025rem solid #eeeeee;
+			font-size: 0.5rem;
+			line-height: 3.95rem;
+			box-sizing:border-box;
+		}
+		.download ul li a{
+			color: #999999;
+		}
+		.download ul li img{
+			margin:0.775rem auto 0.9rem;
+			display: block;
+			width:0.95rem;
+			height:1.1rem;
+		}
+		.download ul li i{
+			display: block;
+			text-align: center;
+		}
+		.log_res{
+			width: 13.5rem;
+			height:2.2rem;
+			margin:0 auto;
+			background: #f8f8f8;
+			line-height: 2.2rem;
+			padding:0 0.75rem;
+		}
+		.log_res a{
+			height:2.2rem;
+			line-height: 2.2rem;
+			font-size: 0.65rem;
+		}
+		.log_res .res{
+			margin-left: 1.2rem;
+		}
+		.log_res .toTop{
+			position: relative;
+			width: 2.5rem;
+			height:2.2rem;
+			line-height: 2.2rem;
+		}
+		.log_res .toTop span{
+			position: absolute;
+			top:0.6rem;
+			right:0;
+			border-top:0.25rem solid transparent;
+			border-left:0.25rem solid transparent;
+			border-right:0.25rem solid transparent;
+			border-bottom:0.25rem solid #999999;
+		}
+		.footer{
+			width:15rem;
+			height:3.5rem;
+			margin:0 auto;
+			background: #eeeeee;
+			padding-top:0.25rem;
+		}
+		.footer p{
+			text-align: center;
+		}
+		.footer .p1{
+			font-size: 0.7rem;
+			height: 2.3rem;
+			line-height: 2.3rem;
+		}
+		.footer .p2{
+			color: #999999;
+		}

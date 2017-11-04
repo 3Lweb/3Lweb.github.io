@@ -3,6 +3,22 @@
   
     
     <entry>
+      <title></title>
+      <url>/2017/11/04/%E5%89%8D%E7%AB%AF%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[不用require怎么实现异步加载]]></title>
+      <url>/2017/09/11/%E4%B8%8D%E7%94%A8require%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BD/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[处理bower总是安装不了package的问题]]></title>
       <url>/2017/09/11/%E5%A4%84%E7%90%86bower%E6%80%BB%E6%98%AF%E5%AE%89%E8%A3%85%E4%B8%8D%E4%BA%86package%E7%9A%84%E9%97%AE%E9%A2%98/</url>
       <content type="html"><![CDATA[<p>现在开发多用yeoman来进行开发，在开发过程中，前端的依赖包都是使用bower来进行安装的，但是经常就是下载不了package特别的苦恼，这里顺便要抱怨一下github，不是一般的慢!!</p>
@@ -1427,12 +1443,6 @@ ERROR Deployer not found: git
     </entry>
     
     <entry>
-      <title><![CDATA[读书]]></title>
-      <url>/reading/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[网站书签]]></title>
       <url>/marks/index.html</url>
       <content type="html"><![CDATA[<h2 id="常用网站登录"><a href="#常用网站登录" class="headerlink" title="常用网站登录"></a>常用网站登录</h2><hr>
@@ -1493,6 +1503,12 @@ ERROR Deployer not found: git
 <p><a href="http://www.uisdc.com/ai-create-switch-button" title="AI精品教程！手把手教你绘制一个高科技电源按钮" target="_blank" rel="external">AI精品教程！手把手教你绘制一个高科技电源按钮</a></p>
 <p><a href="http://www.ui.cn/detail/203301.html" title="用PS和AI制作出小黄人的设计教程" target="_blank" rel="external">用PS和AI制作出小黄人的设计教程</a></p>
 ]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[读书]]></title>
+      <url>/reading/index.html</url>
+      <content type="html"></content>
     </entry>
     
     <entry>

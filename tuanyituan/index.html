@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
+	<script src="js/common.js"></script>
+	<script type="text/javascript">
+// 	document.addEventListener('DOMContentLoaded',function(){
+// 		var rem = document.documentElement.clientWidth*20/320;
+// 		window.onresize=function(){
+// 			rem = document.documentElement.clientWidth*20/320;
+// 			document.documentElement.style.fontSize=rem+'px';
+// 		};
+// 		document.documentElement.style.fontSize=rem+'px';
+// 		var oShowImg = document.querySelector('.show .showImg');
+// 		var oShowBtn = document.querySelector('.show .showbtn');
+// 		var aImg = oShowImg.children;
+// 		var aBtn = oShowBtn.children;
+// 		var oTop = document.querySelector('.toTop');
+// 		var oBack = document.querySelector('.back');
+// 		//回到顶部
+// 		oTop.addEventListener('touchend',function(){
+// 			var start = document.documentElement.scrollTop||document.body.scrollTop;
+//                 var dis = 0-start;
+//                 var count = parseInt(3000/30);
+//                 var n = 0;
+//                 clearInterval(oTop.timer);
+//                 oTop.timer = setInterval(function(){
+//                     bOk=false;
+//                     n++;
+//                     var a = 1-n/count;
+//                     var cur = start+dis*(1-Math.pow(a,3));
+//                     document.documentElement.scrollTop=document.body.scrollTop=cur;
+//                     if(n==count){
+//                         clearInterval(oTop.timer);
+//                     }
+//                 },30);
+// 		},false);
+// 		// 返回键
+// 		oBack.addEventListener('touchend',function(){
+// 			javascript:history.back(-1);
+// 		},false);
+// 		// 轮播图
+// 		oShowImg.style.width=(aImg.length*aImg[0].offsetWidth)/rem+'rem';
+// 		var iNow = 1;
+// 		var x = -aImg[0].offsetWidth/rem;
+// 		var bOk=false;
+// oShowImg.addEventListener('touchstart',function(ev){
+// 		if(bOk)return;
+// 		bOk = true;
+// 		var downX = ev.targetTouches[0].pageX/rem;
+// 		var disX = downX-x;
+// 		function fnMove(ev){
+// 			x = ev.targetTouches[0].pageX/rem-disX;
+// 			oShowImg.style.WebkitTransform = 'translate3d('+x+'rem,0,0)';
+// 		}
+// 		function fnEnd(ev){
+// 			document.removeEventListener('touchmove',fnMove,false);
+// 			document.removeEventListener('touchend',fnEnd,false);
+// 			var upX = ev.changedTouches[0].pageX/rem;
+			
+// 			if(Math.abs(upX-downX)>100/rem){
+// 				if(upX<downX){
+// 					iNow++;
+// 				}else {
+// 					iNow--;
+// 				}
+// 			}
+			
+			
+// 			oShowImg.style.WebkitTransition = '.4s all ease';
+			
+// 			x = -iNow*aImg[0].offsetWidth/rem;
+// 			oShowImg.style.WebkitTransform = 'translate3d('+x+'rem,0,0)';
+// 			function tranEnd(){
+// 				oShowImg.removeEventListener('transitionend',tranEnd,false);
+// 				oShowImg.style.WebkitTransition = 'none';
+				
+// 				if(iNow==0){
+// 					iNow = aImg.length-2;
+// 				}
+// 				if(iNow==aImg.length-1){
+// 					iNow = 1;
+// 				}
+// 				x = -iNow*aImg[0].offsetWidth/rem;
+// 				for(var i=0;i<aBtn.length;i++){
+// 					aBtn[i].className='';
+// 				}
+// 				aBtn[iNow-1].className='active';
+// 				oShowImg.style.WebkitTransform = 'translate3d('+x+'rem,0,0)';
+				
+// 				bOk = false;
+// 			}
+// 			oShowImg.addEventListener('transitionend',tranEnd,false);
+// 		}
+// 		document.addEventListener('touchmove',fnMove,false);
+// 		document.addEventListener('touchend',fnEnd,false);
+// 		ev.preventDefault();
+// 	},false);
+// 	},false);
+window.onload=window.resize=function(){
+			rem = document.documentElement.clientWidth*20/320;
+			document.documentElement.style.fontSize=rem+'px';
+	var oTop = document.querySelector('.toTop');
+		var oBack = document.querySelector('.back');
+		//回到顶部
+		oTop.addEventListener('touchend',function(){
+			var start = document.documentElement.scrollTop||document.body.scrollTop;
+                var dis = 0-start;
+                var count = parseInt(3000/30);
+                var n = 0;
+                clearInterval(oTop.timer);
+                oTop.timer = setInterval(function(){
+                    bOk=false;
+                    n++;
+                    var a = 1-n/count;
+                    var cur = start+dis*(1-Math.pow(a,3));
+                    document.documentElement.scrollTop=document.body.scrollTop=cur;
+                    if(n==count){
+                        clearInterval(oTop.timer);
+                    }
+                },30);
+		},false);
+		// 返回键
+		oBack.addEventListener('touchend',function(){
+			javascript:history.back(-1);
+		},false);
+};
+	</script>
+</head>
+<body>
+	<header>
+		<span class="back">返回</span>
+		<a href="javascript:;"><img src="http://o772ons67.bkt.clouddn.com/log.png" alt="log" /></a>
+	</header>
+	<div class="show">
+		<ul class="showImg clearfix">
+			<li><a href="javascript:;"><img src="http://o772ons67.bkt.clouddn.com/f2885b33be0c77872b572ddd5a00237c.jpg"></a></li>
+			<li><a href="javascript:;"><img src="http://o772ons67.bkt.clouddn.com/6029b6b3902eae960820ae0afb9e2f77.jpg"></a></li>
+			<li><a href="javascript:;"><img src="http://o772ons67.bkt.clouddn.com/8ee622fa917ca98eb94866af077ac614.jpg"></a></li>
+			<li><a href="javascript:;"><img src="http://o772ons67.bkt.clouddn.com/6029b6b3902eae960820ae0afb9e2f77.jpg"></a></li>
+			<li><a href="javascript:;"><img src="http://o772ons67.bkt.clouddn.com/2141ba0bd2b13a5b9d47b54b373be423.jpg"></a></li>
+			<li><a href="javascript:;"><img src="http://o772ons67.bkt.clouddn.com/f2885b33be0c77872b572ddd5a00237c.jpg"></a></li>
+			<li><a href="javascript:;"><img src="http://o772ons67.bkt.clouddn.com/6029b6b3902eae960820ae0afb9e2f77.jpg"></a></li>
+		</ul>
+		<ul class="showbtn clearfix">
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<div class="nav clearfix">
+		<ul>
+			<li>
+				<a href="sp.html">
+					<span class="iconfont shangpin" >&#xe650;</span>
+					<p>商品团</p>
+				</a>
+			</li>
+			<li>
+				<a href="life.html">
+					<span class="iconfont shenghuo">&#xe62e;</span>
+					<p>生活团</p>
+				</a>				
+			</li>
+			<li>
+				<a href="pinpai.html">
+					<span class="iconfont pinpai">&#xe61c;</span>
+					<p>品牌团</p>
+				</a>				
+			</li>
+			<li>
+				<a href="jubaopen.html">
+					<span class="iconfont jubaopen">&#xe70b;</span>
+					<p>团一团</p>
+				</a>
+				
+			</li>
+			<li>
+				<a href="javascript:;">
+					<span class="iconfont jumingpin">&#xe64a;</span>
+					<p>名品团</p>
+				</a>				
+			</li>
+			<li>
+				<a href="javascript:;">
+					<span class="iconfont jujiazhuang">&#xe672;</span>
+					<p>家装团</p>
+				</a>				
+			</li>
+			<li>
+				<a href="javascript:;">
+					<span class="iconfont jutou">&#xe766;</span>
+					<p>团团购</p>
+				</a>				
+			</li>
+			<li>
+				<a href="javascript:;">
+					<span class="iconfont kehuduan">&#xe60f;</span>
+					<p>客户端</p>
+				</a>				
+			</li>
+		</ul>
+	</div>
+	<div class="list">
+		<h2 class="clearfix">
+			<span>团一团热卖排行</span>
+			<em>TOP 10</em>
+		</h2>
+		<ul>
+			<li>
+				<a href="javascript:;" class="clearfix">
+					<div style="background:#e00202;">1</div>
+					<img src="http://o772ons67.bkt.clouddn.com/list1.png"/>
+					<span class="clearfix">
+						<em class="left left_txt">
+							<p>已售<i>68423</i></p>
+							<p><i>2.3</i>折&nbsp;￥<i class="old_price">299</i></p>
+						</em>
+						<em class="right right_txt">
+							￥<i>51</i> <strong>&gt;</strong>
+						</em>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="clearfix">
+					<div style="background:#ff4800;">2</div>
+					<img src="http://o772ons67.bkt.clouddn.com/list2.png"/>
+					<span class="clearfix">
+						<em class="left left_txt">
+							<p>已售<i>68423</i></p>
+							<p><i>2.3</i>折&nbsp;￥<i class="old_price">299</i></p>
+						</em>
+						<em class="right right_txt">
+							￥<i>51</i> <strong>&gt;</strong>
+						</em>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="clearfix">
+					<div style="background:#ff7300;">3</div>
+					<img src="http://o772ons67.bkt.clouddn.com/list3.png"/>
+					<span class="clearfix">
+						<em class="left left_txt">
+							<p>已售<i>68423</i></p>
+							<p><i>2.3</i>折&nbsp;￥<i class="old_price">299</i></p>
+						</em>
+						<em class="right right_txt">
+							￥<i>51</i> <strong>&gt;</strong>
+						</em>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="clearfix">
+					<div style="background:#ff9d00;">4</div>
+					<img src="http://o772ons67.bkt.clouddn.com/list4.png"/>
+					<span class="clearfix">
+						<em class="left left_txt">
+							<p>已售<i>68423</i></p>
+							<p><i>2.3</i>折&nbsp;￥<i class="old_price">299</i></p>
+						</em>
+						<em class="right right_txt">
+							￥<i>51</i> <strong>&gt;</strong>
+						</em>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="clearfix">
+					<div style="background:#ffa800;">5</div>
+					<img src="http://o772ons67.bkt.clouddn.com/list5.png"/>
+					<span class="clearfix">
+						<em class="left left_txt">
+							<p>已售<i>68423</i></p>
+							<p><i>2.3</i>折&nbsp;￥<i class="old_price">299</i></p>
+						</em>
+						<em class="right right_txt">
+							￥<i>51</i> <strong>&gt;</strong>
+						</em>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="clearfix">
+					<div style="background:#ffb400;">6</div>
+					<img src="http://o772ons67.bkt.clouddn.com/list6.png"/>
+					<span class="clearfix">
+						<em class="left left_txt">
+							<p>已售<i>68423</i></p>
+							<p><i>2.3</i>折&nbsp;￥<i class="old_price">299</i></p>
+						</em>
+						<em class="right right_txt">
+							￥<i>51</i> <strong>&gt;</strong>
+						</em>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="clearfix">
+					<div style="background:#ffba00;">7</div>
+					<img src="http://o772ons67.bkt.clouddn.com/list7.png"/>
+					<span class="clearfix">
+						<em class="left left_txt">
+							<p>已售<i>68423</i></p>
+							<p><i>2.3</i>折&nbsp;￥<i class="old_price">299</i></p>
+						</em>
+						<em class="right right_txt">
+							￥<i>51</i> <strong>&gt;</strong>
+						</em>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="clearfix">
+					<div style="background:#fcd000;">8</div>
+					<img src="http://o772ons67.bkt.clouddn.com/list8.png"/>
+					<span class="clearfix">
+						<em class="left left_txt">
+							<p>已售<i>68423</i></p>
+							<p><i>2.3</i>折&nbsp;￥<i class="old_price">299</i></p>
+						</em>
+						<em class="right right_txt">
+							￥<i>51</i> <strong>&gt;</strong>
+						</em>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="clearfix">
+					<div style="background:#ffd719;">9</div>
+					<img src="http://o772ons67.bkt.clouddn.com/list9.png"/>
+					<span class="clearfix">
+						<em class="left left_txt">
+							<p>已售<i>68423</i></p>
+							<p><i>2.3</i>折&nbsp;￥<i class="old_price">299</i></p>
+						</em>
+						<em class="right right_txt">
+							￥<i>51</i> <strong>&gt;</strong>
+						</em>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="clearfix">
+					<div style="background:#ffe152;">10</div>
+					<img src="http://o772ons67.bkt.clouddn.com/list10.png"/>
+					<span class="clearfix">
+						<em class="left left_txt">
+							<p>已售<i>68423</i></p>
+							<p><i>2.3</i>折&nbsp;￥<i class="old_price">299</i></p>
+						</em>
+						<em class="right right_txt">
+							￥<i>51</i> <strong>&gt;</strong>
+						</em>
+					</span>
+				</a>
+			</li>
+		</ul>
+
+	</div>
+	<a class="more" href="javascript:;">更多划算 逛起来</a>
+	<div class="group clearfix">
+		<img src="http://o772ons67.bkt.clouddn.com/group1.jpg" class="left">
+		<div class="group_nav">
+			<a href="javascript:;">服饰</a>
+			<a href="javascript:;" class="hot">配饰</a>
+			<a href="javascript:;">美妆</a>
+			<a href="javascript:;">鞋包</a>
+			<a href="javascript:;">食品</a>
+			<a href="javascript:;">家居</a>
+			<a href="javascript:;">运动</a>
+			<a href="javascript:;">电器</a>
+			<a href="javascript:;">百货</a>
+			<a href="javascript:;">母婴</a>
+			<a href="javascript:;">数码</a>
+			<a href="javascript:;">更多</a>
+		</div>
+	</div>
+	<a class="more" href="javascript:;">精彩商品 逛起来</a>
+	<div class="group clearfix">
+		<img src="http://o772ons67.bkt.clouddn.com/group2.jpg" class="left">
+		<div class="group_nav">
+			<a href="javascript:;">美食</a>
+			<a href="javascript:;" class="hot">教育</a>
+			<a href="javascript:;">酒店</a>
+			<a href="javascript:;">电影</a>
+			<a href="javascript:;">生活服务</a>
+			<a href="javascript:;">卡卷</a>
+			<a href="javascript:;">摄影</a>
+			<a href="javascript:;">粮油生鲜</a>
+			<a href="javascript:;">门票</a>
+			<a href="javascript:;">休闲娱乐</a>
+			<a href="javascript:;">&nbsp;</a>
+			<a href="javascript:;">&nbsp;</a>
+		</div>
+	</div>
+	<a class="more" href="javascript:;">品质生活 逛起来</a>
+	<div class="group clearfix">
+		<img src="http://o772ons67.bkt.clouddn.com/group3.jpg" class="left">
+		<div class="group_nav">
+			<a href="javascript:;">七匹狼</a>
+			<a href="javascript:;" class="hot">粉红...</a>
+			<a href="javascript:;">卓诗尼</a><br/>
+			<a href="javascript:;">收纳博士</a>
+			<a href="javascript:;">惠氏</a>
+			<a href="javascript:;">夏乐</a>
+			<a href="javascript:;">帕克伦</a>
+			<a href="javascript:;">古今</a>
+			<a href="javascript:;">九牧</a>
+			<a href="javascript:;">诺奥</a>
+			<a href="javascript:;">红豆</a>
+			<a href="javascript:;">曼秀雷顿</a>
+		</div>
+	</div>
+	<a class="more" href="javascript:;">品牌折扣 逛起来</a>
+	<div class="download">
+		<ul class="clearfix">
+			<li>
+				<a href="javascript:;">
+					<img src="http://o772ons67.bkt.clouddn.com/apple.png" alt="apple">
+					<i>ios客户端</i>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<img src="http://o772ons67.bkt.clouddn.com/Shape.png" alt="">
+					<i>安卓客户端</i>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<img src="http://o772ons67.bkt.clouddn.com/tuoyuan.png" alt="">
+					<i>意见反馈</i>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="log_res clearfix">
+		<a href="javascript:;" class="login left">登陆</a>
+		<a href="javascript:;" class="res left">注册</a>
+		<a href="javascript:;" class="toTop right">
+			TOP
+			<span></span>
+		</a>
+	</div>
+	<div class="footer">
+		<p class="p1">标准版 电脑板</p>
+		<p class="p2">@2013 浙B2-45678332 服务中心</p>
+	</div>
+	
+</body>
+</html>

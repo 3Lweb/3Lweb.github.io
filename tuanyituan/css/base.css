@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+padding:0;
+margin:0;
+line-height:100%;
+}
+html,body{
+	width:100%;
+	overflow-x:hidden;
+}
+body {
+font-size:12px;
+}
+a {
+color:#000;
+text-decoration:none;
+}
+ul,ol {
+list-style:none;
+}
+h1,h2,h3,h4,h5,h6 {
+font-size:12px;
+font-weight:normal;
+}
+b,strong {
+font-weight:normal;
+/* 不加粗 */
+}
+i,em {
+font-style:normal;
+/* 不倾斜 */
+}
+img {
+/* display:block; 垂直-对齐：居上;解决图片下方几像素bug */
+border:none;
+vertical-align:top;
+}
+
+input {
+border:none;
+}
+
+/*  clear:both; 清除两边浮动 */
+.clearfix:after {
+clear:both;
+display:block;
+content:"";
+}
+.clearfix {
+zoom:1;
+}
+

@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+<title>商品团B</title>
+<link rel="stylesheet" href="css/base.css" type="text/css" />
+<script src="js/common.js"></script>
+<style>
+html{
+	font-size:20px;
+}
+.box{
+	width:16rem;
+}
+header{
+	height:2.525rem;
+	width:16rem; 
+	background:-webkit-linear-gradient(#fff,#ebebeb); 
+	background:-moz-linear-gradient(#fff,#ebebeb); 
+	position:relative; 
+	text-align:center;
+}
+header .back{
+			position:absolute; 
+			left:0.55rem; 
+			top:0.55rem; 
+			width:3rem; 
+			height:1.45rem; 
+			background:url(http://o772ons67.bkt.clouddn.com/back_btn.png) no-repeat; 
+			background-size:100%; 
+			text-indent:-99999rem;
+			cursor:pointer;
+		}
+header .parts{
+	position:absolute; 
+	right:0.55rem; 
+	top:0.55rem; 
+	width:2.575rem; 
+	height:1.575rem; 
+	background:url(http://o772ons67.bkt.clouddn.com/parts_btn.png) no-repeat; 
+	background-size:100%; 
+	text-indent:-99999rem;
+}
+header img{
+	width:4.15rem; 
+	height:0.775rem; 
+	margin-top:0.75rem;
+}
+nav{
+	width:16rem;
+	margin:0 auto;
+	overflow: hidden;
+}
+nav ul{
+	width:16.1rem;
+}
+nav .on a{
+	color: #d51942;
+}
+nav li{
+	float: left;
+	width: 3.975rem;
+	height:2rem;
+	text-align: center;
+	line-height: 2rem;
+	font-size: 0.55rem;
+	color: #999999;
+	border-right:0.025rem solid #dcdcdc;
+	border-bottom:0.025rem solid #dcdcdc;
+}
+.show{
+			width: 16rem;
+			height:8.475rem;
+			position: relative;
+			overflow: hidden;
+			border-bottom: 0.025rem solid #dcdcdc;
+		}
+		.show .showImg{
+			position:absolute;
+			-webkit-transform:translate3d(-16rem,0,0);
+			height:6.675rem;
+		}
+		.show .showImg li{
+			float:left;
+			width:16rem;
+			height: 6.675rem;
+
+		}
+	/*	.show .showImg .on{
+			display: block;
+		}*/
+		.show .showImg img{
+			width:16rem;
+			height:6.675rem;
+		}
+		.showbtn{
+			position: absolute;
+			left:50%;
+			top:7.2rem;
+			margin-left: -1.25rem;
+			/*width: 2.5rem;*/
+			height:0.25rem;
+		}
+		.showbtn li{
+			width:0.25rem;
+			height:0.25rem;
+			border-radius: 50%;
+			background: #a9a9a9;
+			float: left;
+			margin-right: 0.25rem;
+		}
+		.showbtn .active{
+			background: #ff4300;
+		}
+
+section{
+	width:16rem;
+	height:3.975rem;
+	border-bottom:0.025rem solid #dcdcdc;
+	box-sizing:border-box;
+}
+section img{
+
+	width:100%;
+	height:100%;
+}
+</style>
+<script>
+window.onload=window.onresize=function(){
+	var rem = document.documentElement.clientWidth*20/320;
+	document.documentElement.style.fontSize = rem+'px';
+	var oBack=document.querySelector('header .back');
+			oBack.onclick=function(){
+				window.history.back();
+			};
+};
+</script>
+</head>
+
+<body>
+<div class="box">
+	<header>
+		<span class="back">返回</span>
+		<img src="http://o772ons67.bkt.clouddn.com/life.png" alt="log" />
+		<a href="index.html" class="parts">分类</a>
+	</header>
+	<nav>
+		<ul class="clearfix">
+			<li><a href="sp.html">商品</a></li>
+			<li><a href="life.html">生活</a></li>
+			<li><a href="pinpai.html">品牌</a></li>
+			<li class="on"><a href="jubaopen.html">聚宝盆</a></li>
+		</ul>
+	</nav>
+	<div class="show">
+		<ul class="showImg clearfix">
+			<li><a href="javascript:;"><img src="http://o772ons67.bkt.clouddn.com/f2885b33be0c77872b572ddd5a00237c.jpg"></a></li>
+			<li><a href="javascript:;"><img src="http://o772ons67.bkt.clouddn.com/6029b6b3902eae960820ae0afb9e2f77.jpg"></a></li>
+			<li><a href="javascript:;"><img src="http://o772ons67.bkt.clouddn.com/8ee622fa917ca98eb94866af077ac614.jpg"></a></li>
+			<li><a href="javascript:;"><img src="http://o772ons67.bkt.clouddn.com/6029b6b3902eae960820ae0afb9e2f77.jpg"></a></li>
+			<li><a href="javascript:;"><img src="http://o772ons67.bkt.clouddn.com/2141ba0bd2b13a5b9d47b54b373be423.jpg"></a></li>
+			<li><a href="javascript:;"><img src="http://o772ons67.bkt.clouddn.com/f2885b33be0c77872b572ddd5a00237c.jpg"></a></li>
+			<li><a href="javascript:;"><img src="http://o772ons67.bkt.clouddn.com/6029b6b3902eae960820ae0afb9e2f77.jpg"></a></li>
+		</ul>
+		<ul class="showbtn clearfix">
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<section>
+		<a href="javascript:;" class="clearfix">
+			<img src="http://o772ons67.bkt.clouddn.com/jubaopenlist1.png" alt="">
+		</a>
+	</section>
+	<section>
+		<a href="javascript:;" class="clearfix">
+			<img src="http://o772ons67.bkt.clouddn.com/jubaopenlist2.png" alt="">
+		</a>
+	</section>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
