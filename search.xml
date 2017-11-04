@@ -3,7 +3,7 @@
   
     
     <entry>
-      <title></title>
+      <title><![CDATA[前端架构设计]]></title>
       <url>/2017/11/04/%E5%89%8D%E7%AB%AF%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</url>
       <content type="html"></content>
       
@@ -1443,6 +1443,19 @@ ERROR Deployer not found: git
     </entry>
     
     <entry>
+      <title><![CDATA[在线测试]]></title>
+      <url>/testOnline/index.html</url>
+      <content type="html"><![CDATA[<p><a href="../html/index.html" title="数据结构在线测试"> 数据结构在线测试 </a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[读书]]></title>
+      <url>/reading/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[网站书签]]></title>
       <url>/marks/index.html</url>
       <content type="html"><![CDATA[<h2 id="常用网站登录"><a href="#常用网站登录" class="headerlink" title="常用网站登录"></a>常用网站登录</h2><hr>
@@ -1502,19 +1515,6 @@ ERROR Deployer not found: git
 <h2 id="AI与PS"><a href="#AI与PS" class="headerlink" title="AI与PS"></a>AI与PS</h2><p><a href="http://www.uisdc.com/ai-create-skeuomorphism-socket" title="AI教程！手把手教你绘制超拟物的插座适配器" target="_blank" rel="external">AI教程！手把手教你绘制超拟物的插座适配器</a></p>
 <p><a href="http://www.uisdc.com/ai-create-switch-button" title="AI精品教程！手把手教你绘制一个高科技电源按钮" target="_blank" rel="external">AI精品教程！手把手教你绘制一个高科技电源按钮</a></p>
 <p><a href="http://www.ui.cn/detail/203301.html" title="用PS和AI制作出小黄人的设计教程" target="_blank" rel="external">用PS和AI制作出小黄人的设计教程</a></p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[读书]]></title>
-      <url>/reading/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[在线测试]]></title>
-      <url>/testOnline/index.html</url>
-      <content type="html"><![CDATA[<p><a href="../html/index.html" title="数据结构在线测试"> 数据结构在线测试 </a></p>
 ]]></content>
     </entry>
     
