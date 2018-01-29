@@ -4,13 +4,11 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>对输入字符进行转义 | 3Lweb</title>
+    <title>3Lweb</title>
 	<meta name="baidu-site-verification" content="5yWG4n23gR" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="唐孟西">
-    
-    <meta name="description" content="对于用户输入的内容要进行预处理，即使没有明确的要求，也要考虑到特殊符号的问题v = s.replace(/&amp;amp;/g,”&amp;amp;”).replace(//g,”&amp;gt;”).replace(/“/g,”&amp;#34;”).replace(/‘/g,”&amp;#39;”);">
     
     
     
@@ -63,81 +61,31 @@
 
     </header>
     <div id="container">
-      <div id="main" class="post" itemscope itemprop="blogPost">
-	<article itemprop="articleBody"> 
-		<header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2017/07/03/对输入字符进行转义/" title="对输入字符进行转义" itemprop="url">对输入字符进行转义</a>
-  </h1>
-  <p class="article-author">By
-    
-      <a href="http://3Lweb.cn" title="唐孟西">唐孟西</a>
-    </p>
-  <p class="article-time">
-    <time datetime="2017-07-03T03:55:18.000Z" itemprop="datePublished">2017-07-03</time>
-    更新日期:<time datetime="2017-07-03T05:36:30.450Z" itemprop="dateModified">2017-07-03</time>
-    
-  </p>
-</header>
-	<div class="article-content">
-		
-		
-		<div id="toc" class="toc-article">
-			<strong class="toc-title">文章目录</strong>
-		
-		</div>
-		
-		<p>对于用户输入的内容要进行预处理，即使没有明确的要求，也要考虑到特殊符号的问题<br>v = s.replace(/&amp;/g,”&amp;”).replace(//g,”&gt;”).replace(/“/g,”&#34;”).replace(/‘/g,”&#39;”);</p>
+      <div id="main">
+
+  <section class="post" itemscope itemprop="blogPost">
   
-	</div>
-		<footer class="article-footer clearfix">
+    <a href="/2016/05/02/onclick和onblur冲突问题/" title="onclick和onblur冲突问题" itemprop="url">
+  
+    <h1 itemprop="name">onclick和onblur冲突问题</h1>
+    
+     
+           <p itemprop="description" >onclick和onblur的冲突问题新浪首页的搜索框里面有一个使用ajax的下拉框。我们需要实现一个点击下拉框里面的一项，让搜索框里面的值变成这一项，同时下拉框消失的效果，但同时在点击其他地方的时候，这个下拉框也要消失。大致如图： 
 
-
-
-
-<div class="article-share" id="share">
-
-  <div data-url="http://3Lweb.cn/2017/07/03/对输入字符进行转义/" data-title="对输入字符进行转义 | 3Lweb" data-tsina="5617860715" class="share clearfix">
-  </div>
-
-</div>
-</footer>   	       
-	</article>
-	
-<nav class="article-nav clearfix">
- 
- <div class="prev" >
- <a href="/2017/06/12/nodejs提示需要安装一些windows扩展程序/" title="nodejs提示需要安装一些windows扩展程序">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  nodejs提示需要安装一些windows扩展程序</span>
-</a>
-</div>
-
-
-<div class="next">
-<a href="/2017/07/11/angular-select的使用/"  title="angular select的使用">
- <strong>NEXT:</strong><br/> 
- <span>angular select的使用
-</span>
-</a>
-</div>
-
-</nav>
-
-	
-<section class="comment">
-	<div class="ds-thread"></div>
+我们同时使用onblur和onclick来</p>
+        
+    
+    <time datetime="2016-05-02T14:57:24.000Z" itemprop="datePublished">2016-05-02</time>
+  </a>
 </section>
 
-</div>  
-      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
-  <div id="toc" class="toc-aside">
-  <strong class="toc-title">文章目录</strong>
-  
-  </div>
+  <nav id="page-nav" class="clearfix">
+    <a class="extend prev" rel="prev" href="/page/11/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span>
+  </nav>
+
+</div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
 <div id="asidepart">
 <div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
@@ -237,8 +185,6 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
-      
-      $('#toc.toc-aside').css('display', 'none');
         
     }
   });
@@ -258,83 +204,11 @@ $(document).ready(function(){
 });
 </script>
 
-<script type="text/javascript">
-$(document).ready(function(){ 
-  var ai = $('.article-content>iframe'),
-      ae = $('.article-content>embed'),
-      t  = $('#toc'),
-      h  = $('article h2')
-      ah = $('article h2'),
-      ta = $('#toc.toc-aside'),
-      o  = $('.openaside'),
-      c  = $('.closeaside');
-  if(ai.length>0){
-    ai.wrap('<div class="video-container" />');
-  };
-  if(ae.length>0){
-   ae.wrap('<div class="video-container" />');
-  };
-  if(ah.length==0){
-    t.css('display','none');
-  }else{
-    c.click(function(){
-      ta.css('display', 'block').addClass('fadeIn');
-    });
-    o.click(function(){
-      ta.css('display', 'none');
-    });
-    $(window).scroll(function(){
-      ta.css("top",Math.max(140,320-$(this).scrollTop()));
-    });
-  };
-});
-</script>
 
-
-<script type="text/javascript">
-$(document).ready(function(){ 
-  var $this = $('.share'),
-      url = $this.attr('data-url'),
-      encodedUrl = encodeURIComponent(url),
-      title = $this.attr('data-title'),
-      tsina = $this.attr('data-tsina');
-  var html = [
-  '<a href="#" class="overlay" id="qrcode"></a>',
-  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
-  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
-  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
-  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
-  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
-  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
-  '<span title="Share to"></span>'
-  ].join('');
-  $this.append(html);
-  $('.article-share-qrcode').click(function(){
-    var imgSrc = $('#qrcode-pic').attr('data-src');
-    $('#qrcode-pic').attr('src', imgSrc);
-    $('#qrcode-pic').load(function(){
-        $('.qrcode strong').text(' ');
-    });
-  });
-});     
-</script>
-
-
-<script type="text/javascript">
-  var duoshuoQuery = {short_name:"3lweb"};
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] 
-    || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
-</script> 
 
 
 
 
 
   </body>
-</html>
+ </html>

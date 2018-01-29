@@ -3,6 +3,14 @@
   
     
     <entry>
+      <title><![CDATA[关于vue]]></title>
+      <url>/2018/01/29/%E5%85%B3%E4%BA%8Evue/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[使用innerHTML清空dom元素的时候会清空元素上面绑定的事件吗]]></title>
       <url>/2018/01/29/%E4%BD%BF%E7%94%A8innerHTML%E6%B8%85%E7%A9%BAdom%E5%85%83%E7%B4%A0%E7%9A%84%E6%97%B6%E5%80%99%E4%BC%9A%E6%B8%85%E7%A9%BA%E5%85%83%E7%B4%A0%E4%B8%8A%E9%9D%A2%E7%BB%91%E5%AE%9A%E7%9A%84%E4%BA%8B%E4%BB%B6%E5%90%97/</url>
       <content type="html"></content>
@@ -1450,6 +1458,20 @@ ERROR Deployer not found: git
   
     
     <entry>
+      <title><![CDATA[关于]]></title>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<p>大家好，我是XXX。欢迎来到我的个人技术博客。</p>
+<p>这里用markdown写下你的简介，就跟平时写md一样就可以了。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[读书]]></title>
+      <url>/reading/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[网站书签]]></title>
       <url>/marks/index.html</url>
       <content type="html"><![CDATA[<h2 id="常用网站登录"><a href="#常用网站登录" class="headerlink" title="常用网站登录"></a>常用网站登录</h2><hr>
@@ -1517,20 +1539,6 @@ ERROR Deployer not found: git
       <url>/testOnline/index.html</url>
       <content type="html"><![CDATA[<p><a href="../html/index.html" title="数据结构在线测试"> 数据结构在线测试 </a></p>
 ]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[关于]]></title>
-      <url>/about/index.html</url>
-      <content type="html"><![CDATA[<p>大家好，我是XXX。欢迎来到我的个人技术博客。</p>
-<p>这里用markdown写下你的简介，就跟平时写md一样就可以了。</p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[读书]]></title>
-      <url>/reading/index.html</url>
-      <content type="html"></content>
     </entry>
     
   
