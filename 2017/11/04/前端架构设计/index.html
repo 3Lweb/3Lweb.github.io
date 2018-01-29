@@ -10,6 +10,10 @@
     
     <meta name="author" content="唐孟西">
     
+    <meta name="description" content="《前端架构设计》中给设计系统定制的规则是：永远不要给布局的子内容强加内边距和元素样式，布局只关注垂直对齐，水平对齐和文字间距
+主体和别的数据属性值永远不要强制改变外观，，他们必须保持布局，组件，和元素可以应用其上
+组件总是贴着他的父容器的四个边，元素都没有上外边距和左外边距，所有的最后结点的外边距都">
+    
     
     
     
@@ -74,7 +78,7 @@
     </p>
   <p class="article-time">
     <time datetime="2017-11-04T01:11:05.000Z" itemprop="datePublished">2017-11-04</time>
-    更新日期:<time datetime="2017-11-04T01:11:05.880Z" itemprop="dateModified">2017-11-04</time>
+    更新日期:<time datetime="2017-11-04T01:25:59.606Z" itemprop="dateModified">2017-11-04</time>
     
   </p>
 </header>
@@ -86,7 +90,14 @@
 		
 		</div>
 		
-		  
+		<p>《前端架构设计》中给设计系统定制的规则是：<br>永远不要给布局的子内容强加内边距和元素样式，布局只关注垂直对齐，水平对齐和文字间距</p>
+<p>主体和别的数据属性值永远不要强制改变外观，，他们必须保持布局，组件，和元素可以应用其上</p>
+<p>组件总是贴着他的父容器的四个边，元素都没有上外边距和左外边距，所有的最后结点的外边距都会被清除</p>
+<p>组件本身永远不要添加背景，宽度，浮动，内边距和外边距的样式，组件样式是组件内元素的样式</p>
+<p>每个元素都有且只有一个唯一的且作用域只在组件内的css类名，所有的样式都是直接应用到这个选择器上，并且只有上下文和主题能修改元素的样式</p>
+<p>永远不要在元素上使用外边距，第一个元素总是贴着它所在的组件的顶部</p>
+<p>javascript永远不要绑定任何元素的css类名，选择元素通过数据属性实现</p>
+  
 	</div>
 		<footer class="article-footer clearfix">
 
@@ -112,6 +123,14 @@
 </a>
 </div>
 
+
+<div class="next">
+<a href="/2018/01/29/使用innerHTML清空dom元素的时候会清空元素上面绑定的事件吗/"  title="使用innerHTML清空dom元素的时候会清空元素上面绑定的事件吗">
+ <strong>NEXT:</strong><br/> 
+ <span>使用innerHTML清空dom元素的时候会清空元素上面绑定的事件吗
+</span>
+</a>
+</div>
 
 </nav>
 
@@ -150,7 +169,7 @@
   
   <div class="archiveslist">
     <p class="asidetitle"><a href="/archives">归档</a></p>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">十一月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">八月 2017</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">七月 2017</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">五月 2017</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a><span class="archive-list-count">73</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">十一月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">八月 2017</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">七月 2017</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">五月 2017</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a><span class="archive-list-count">73</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">2</span></li></ul>
   </div>
 
 
@@ -190,7 +209,7 @@
 		
 		
 	</div>
-		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2017 
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2018 
 		
 		<a href="http://3Lweb.cn" target="_blank" title="唐孟西">唐孟西</a>
 		
